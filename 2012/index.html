@@ -1,99 +1,3 @@
-<?php
-//error_reporting(0);
-
-if (!empty($_POST)) {
-
-
-    $error = array();
-    $message = null;
-    
-    // name
-    if (strlen($_POST['name']) >= 3 ) {
-        $message.= "\nName: ". $_POST['name'];
-    } elseif (empty($_POST['name'])) {
-        $error[] = '名前は必須です。';
-    } else {
-        $error[] = '名前は3文字以上必要です。';
-    }
-    
-    // band
-    if ($_POST['band']) {
-        $message.= "\nBand: ". $_POST['band'];
-    }
-
-    // email
-    if (preg_match('/^[^@]*@[^@]*\.[^@]*$/', $_POST['email'])) {
-        $message.= "\nEmail: ". $_POST['email'];
-    } elseif (empty($_POST['email'])) {
-        $error[] = 'Eメールアドレスは必須です。';
-    } else {
-        $error[] = 'Eメールアドレスが正しくありません。';
-    }
-        
-    // phone
-    if (preg_match('/[0-9]/', $_POST['phone'])) {
-        $message.= "\nPhone: ". $_POST['phone'];
-    } elseif (empty($_POST['phone'])) {
-        $message.= "\nPhone: ". $_POST['phone'];
-    } else {
-        $error[] = '電話番号が正しくありません。';
-    }
-    
-    // message
-    if (strlen($_POST['message']) > 10 ) {
-        $message.= "\nMessage: ". $_POST['message'];
-    } elseif (empty($_POST['message'])) {
-        $error[] = 'メッセージは必須です。';
-    } else {
-        $error[] = 'メッセージが短すぎます。';
-    }
-
-    if (empty($error)) {
-        require_once 'lib/swift_required.php';
-    
-        $subject = 'TOJO K-ON Union Fes 問い合わせ';
-
-        $from = $_POST['email'];
-        $fromName = 'TOJO K-ON Union Fes サイトユーザー';
-        $to = array(
-        	'drill_drill_drill@me.com',
-        	'no1aran@gmail.com'
-        );
-
-        /*
-        //Create the Transport
-        $transport = Swift_SmtpTransport::newInstance('xxx.com', 999)
-          ->setUsername('xxx@xxx.com')
-          ->setPassword('xxx');
-
-        //Sendmail
-        $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
-        */
-        
-        //Mail
-        $transport = Swift_MailTransport::newInstance();
-
-        //Create the Mailer using your created Transport
-        $mailer = Swift_Mailer::newInstance($transport);
-
-        //Create a message
-        $message = Swift_Message::newInstance($subject)
-          ->setFrom(array($from => $fromName))
-          ->setTo($to)
-          ->setBody($message);
-
-        //Send the message
-        try {
-            $success = $mailer->send($message);
-            unset($_POST['message']);
-        } catch (Exception $e) {
-            $error[] = $e->getMessage();
-        }
-        
-    }
-    
-}
-?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="ja" dir="ltr">
 
@@ -146,19 +50,6 @@ if (!empty($_POST)) {
 
 		<!--Content Left-->
 		<div id="content" class="heightLine">
-		
-		<?php
-		if (!empty($error)) {
-		    foreach($error as $message) {
-		        echo '<strong>*'. $message .'</strong>';
-		    }
-		}
-		
-		if (!empty($success)) {
-		    echo '<h3 style="color:green;">ありがとうございます。メッセージを受け付けました！</h3>';
-		}
-		
-		?>
 		
 		<h2 class="nobd"><strong>TOJO K-ON Union Fes '12 は終了しました。<br>また来年にご期待ください！</strong></h2>
 		<p><a href="http://d.hatena.ne.jp/TOJO_K-ON/20120504">TOJO K-ON Union Fes 2012の様子</a></p>
@@ -278,43 +169,6 @@ if (!empty($_POST)) {
 		</ul>
 		 -->
 		
-		<h3>コンタクトフォーム</h3>
-		<p><strong>*</strong> は必須項目です。</p>
-		
-		<div class="contact-form">
-		<form action="index.php" method="post" accept-charset="utf-8">
-		    
-		    <table border="0" cellspacing="0" cellpadding="5">
-		        <tr>
-		            <th>氏名<strong>*</strong></th>
-		            <td><input type="text" name="name" value="<?php if (!empty($_POST['name'])) echo $_POST['name']; ?>" id="name" class="validate[required] text-input"></td>
-		        </tr>
-		        <tr>
-		            <th>バンド名</th>
-		            <td><input type="text" name="band" value="<?php if (!empty($_POST['band'])) echo $_POST['band']; ?>" id="band"></td>
-		        </tr>
-		        <tr>
-		            <th>Eメール<strong>*</strong></th>
-		            <td><input type="text" name="email" value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>" id="email"></td>
-		        </tr>
-		        <tr>
-		            <th>電話番号</th>
-		            <td><input type="text" name="phone" value="<?php if (!empty($_POST['phone'])) echo $_POST['phone']; ?>" id="phone"></td>
-		        </tr>
-		        <tr>
-		            <th>メッセージ<strong>*</strong></th>
-		            <td><textarea name="message" id="message" cols="60" rows="5"><?php if (!empty($_POST['message'])) echo $_POST['message']; ?></textarea></td>
-		        </tr>
-		        <tr>
-		            <th>&nbsp;</th>
-		            <td><input type="submit" value="送信">
-		            <input type="reset" value="クリア"></td>
-		        </tr>
-		    </table>
-		
-		</form>
-
-		</div>
 		
 		</div>
 		<!--End Content-->
@@ -327,20 +181,6 @@ if (!empty($_POST)) {
 	
 		<h2>COUNTDOWN</h2>
 	<p>
-
-<?php /*
-   declare target date; source: http://us.imdb.com/ReleaseDates?0121766 ; 
-  */
-  $day   = 4;     // Day of the countdown
-  $month = 5;      // Month of the countdown
-  $year  = 2012;   // Year of the countdown
-  $hour  = 14;     // Hour of the day (east coast time)
-
-  $calculation = ((mktime ($hour,0,0,$month,$day,$year) - time(void))/3600);
-  $hours = (int)$calculation;
-  $days  = (int)($hours/24);
-  $daystohours = (int)($days*24);
-?>
 
 <p><span class="figure"><?php //echo $days; ?>0</span> days, <span class="figure"><?php //echo $hours-$daystohours; ?>0</span> hours</p>
 	

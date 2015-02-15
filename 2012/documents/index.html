@@ -60,20 +60,6 @@
 		<h2>COUNTDOWN</h2>
 	<p>
 
-<?php /*
-   declare target date; source: http://us.imdb.com/ReleaseDates?0121766 ; 
-  */
-  $day   = 4;     // Day of the countdown
-  $month = 5;      // Month of the countdown
-  $year  = 2012;   // Year of the countdown
-  $hour  = 14;     // Hour of the day (east coast time)
-
-  $calculation = ((mktime ($hour,0,0,$month,$day,$year) - time(void))/3600);
-  $hours = (int)$calculation;
-  $days  = (int)($hours/24);
-  $daystohours = (int)($days*24);
-?>
-
 <p><span class="figure"><?php echo $days; ?></span> days, <span class="figure"><?php echo $hours-$daystohours; ?></span> hours</p>
 	
 	<h2>TOJO K-ON Union Fes '12</h2>
