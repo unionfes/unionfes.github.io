@@ -63,7 +63,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43cffd', endColorstr='#07264e');
 	background: -webkit-gradient(linear, left top, left bottom, from(#43cffd), to(#07264e));
 	background: -moz-linear-gradient(top,  #43cffd,  #07264e);
-	background-image: url(../images/bkg.jpg);
+	background-image: url("../../images/2012/bkg.jpg");
     color: #ffffff;
     font-size: 11pt;
     font-family: 'Cabin', "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo;
@@ -269,7 +269,7 @@ button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=subm
 	position: absolute;
 	top: 270px;
 	left: 480px;
-	background: url(../images/entry.png) no-repeat;
+	background: url(../../images/2012/entry.png) no-repeat;
 }
 
 ul#nav {
@@ -279,7 +279,7 @@ ul#nav {
     top: -20px;
     right: 30px;
 	list-style: none;
-	background: url(../images/bg_yellow.jpg) #ffcc00;
+	background: url(../../images/2012/bg_yellow.jpg) #ffcc00;
 	-webkit-box-shadow: 1px 1px 14px #000;
     -moz-box-shadow:  1px 1px 14px #000;
     box-shadow: 1px 1px 14px #000;
@@ -309,7 +309,7 @@ ul#nav li a:hover {
 }
 
 .band {
-	background: url(../images/bg.jpg);
+	background: url(../../images/2012/bg.jpg);
 	min-height: 200px;
 	margin-bottom: 10px;
 	padding: 10px;
