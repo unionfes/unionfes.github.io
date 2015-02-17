@@ -22,13 +22,28 @@ build:
           echo -p "gem list: $(gem list)"
 
     - script:
-        name: Build and deploy
-        code: bundle exec rake deploy
+        name: Build Middleman
+        code: bundle exec middleman build
 
-    # Add more steps here:
-    # - script:
-    #    name: rspec
-    #    code: bundle exec rspec
+deploy:
+  steps:
+    - script:
+        name: make .ssh directory
+        code: mkdir -p "$HOME/.ssh"
+    - create-file:
+        name: write ssh key
+        filename: $HOME/.ssh/id_rsa
+        overwrite: true
+        hide-from-log: true
+        content: $WERCKER_SSH_KEY_PRIVATE
+    - script:
+        name: set permission for ssh key
+        code: chmod 0400 $HOME/.ssh/id_rsa
+    - script:
+        name: deploy
+        code: bundle exec middleman deploy
+
+
 
 
 
