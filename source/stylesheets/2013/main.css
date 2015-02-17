@@ -1,3 +1,8 @@
+/*
+ *= require 2013/bootstrap
+ *= require 2013/bootstrap-responsive
+ */
+
 /*!
  * Copyright 2013 @no1aran.
  * Based on Design by @round_kmdr.
@@ -5,7 +10,7 @@
 
 body {
     background-color: #e35444;
-    background-image: url(../img/g-body.png);
+    background-image: url(../../images/2013/g-body.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     color: #553939;
@@ -78,7 +83,7 @@ textarea {
 
 .g-neck {
     background-color: #fbf6e0;
-    background-image: url(../img/g-neck.jpg);
+    background-image: url(../../images/2013/g-neck.jpg);
     background-position: center top;
     padding: 20px 20px 0 20px;
 }
@@ -178,19 +183,19 @@ table.members td {
 }
 
 .icon-vo {
-    background-image: url(../img/icon-vo.png);
+    background-image: url(/images/2013/icon-vo.png);
 }
 .icon-gt {
-    background-image: url(../img/icon-gt.png);
+    background-image: url(/images/2013/icon-gt.png);
 }
 .icon-ba {
-    background-image: url(../img/icon-ba.png);
+    background-image: url(/images/2013/icon-ba.png);
 }
 .icon-dr {
-    background-image: url(../img/icon-dr.png);
+    background-image: url(/images/2013/icon-dr.png);
 }
 .icon-key {
-    background-image: url(../img/icon-key.png);
+    background-image: url(/images/2013/icon-key.png);
 }
 
 .joint {
