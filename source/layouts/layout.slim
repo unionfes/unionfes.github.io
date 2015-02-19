@@ -18,6 +18,10 @@ html
     title= current_page.data.title || "TOJO K-ON Union Fes"
 
     = stylesheet_link_tag "normalize", "default"
+    = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    - if current_page.data.stylesheets
+      = stylesheet_link_tag current_page.data.stylesheets
+
     javascript:
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,4 +33,7 @@ html
 
   body class=page_classes
     = yield
-    = javascript_include_tag "default"
+
+    = javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
+      async: "async", defer: "defer"
+    = javascript_include_tag "default", async: "async", defer: "defer"
