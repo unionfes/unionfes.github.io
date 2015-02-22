@@ -9,8 +9,9 @@ html
     meta name="author" content="UNIKAI"
     meta property="og:title" content=(current_page.data.title || "TOJO K-ON Union Fes")
     meta property="og:type" content="website"
-    meta property="og:url" content="http://unionfes.tojok-on.com#{current_path}"
-    / meta property="og:image"
+    meta property="og:url" content="http://unionfes.tojok-on.com/#{current_path}"
+    - if current_page.data.image
+      meta property="og:image" content=current_page.data.image
     meta property="og:site_name" content="TOJO K-ON Union Fes"
     meta property="og:description" content=(current_page.data.description || data.defaults.description)
     meta property="fb:app_id" content="2065543910251279"
