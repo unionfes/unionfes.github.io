@@ -1,7 +1,7 @@
 ---
 title: "TOJO K-ON Union Fes '15"
 stylesheets:
-  - "2015_landing"
+  - "2015/landing"
 ---
 
 div.container#container
@@ -9,20 +9,45 @@ div.container#container
     div.col-md-12#title
       = image_tag "2015/landing/img_title.png"
 
-  div.row#date
-    div.col-md-4
-      = image_tag "2015/landing/h1_date.png"
-    div.col-md-8
-      p hogehoge
+  div#content
+    div.row#date.section
+      div.col-md-3.section-header
+        = image_tag "2015/landing/h1_date.png"
+        p.english DATE
+        p.japanese 開催日
+      div.col-md-9.section-body
+        p.sub-header 2015年5月4日(木)
+        p.section-content
+          | 詳細はこのサイトにて順次公開していきます。お見逃しなく！
 
-  div.row#place
-    div.col-md-4
-      = image_tag "2015/landing/h1_place.png"
-    div.col-md-8
-      p hogehoge
+    div.row#place.section
+      div.col-md-3.section-header
+        = image_tag "2015/landing/h1_place.png"
+        p.english PLACE
+        p.japanese 開催地
+      div.col-md-9.section-body
+        p.sub-header 浅草KURAWOOD
+        div.raw.section-content
+          div.col-md-7.map
+            iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25915.32518033832!2d139.79810700000002!3d35.715995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec7fd3949a3%3A0x2273fa87cbac97c!2z5pel5pysLCDjgJIxMTEtMDA0MyDmnbHkuqzpg73lj7DmnbHljLrpp5LlvaLvvJHkuIHnm67vvJPiiJLvvJg!5e0!3m2!1sja!2s!4v1424603047038" width="400" height="300" frameborder="0" style="border:0"
+          div.col-md-5.kurawood-info
+            p つくばエクスプレス 浅草駅 から徒歩15分
+            p 東京都台東区駒形1丁目3-8 ベッコアメ浅草ビルB1F
+            p
+              a href="http://kurawood.jp/" class="external" http://kurawood.jp/
 
-  div.row#past
-    div.col-md-4
-      = image_tag "2015/landing/h1_past.png"
-    div.col-md-8
-      p hogehoge
+    div.row#past.section
+      div.col-md-3.section-header
+        = image_tag "2015/landing/h1_past.png"
+        p.english PAST
+        p.japanese 過去のUnionFes
+      div.col-md-9.section-body
+        p.sub-header Unionって？
+        div.section-content
+          p 
+            | 筑波大学の軽音サークルTOJO K-ONの過去・現在・未来に関わる全ての人々が世代を超えて全力で楽しむライブイベントです。
+            | 今までのUnion Fesの様子を見ることができるので、是非チェックしてみてください！
+          ul
+            li: a= link_to "2012", "/2012"
+            li: a= link_to "2013", "/2013"
+            li: a= link_to "2014", "/2014"
