@@ -24,6 +24,10 @@ build:
     - script:
         name: Build Middleman
         code: bundle exec middleman build
+  after-steps:
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_WEBHOOK_URL
+        channel: website
 
 deploy:
   steps:
@@ -50,6 +54,10 @@ deploy:
     - script:
         name: deploy
         code: bundle exec middleman deploy
+  after-steps:
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_WEBHOOK_URL
+        channel: website
 
 
 
