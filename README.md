@@ -8,36 +8,25 @@ UnionFesはアイアンサーバじゃなくてGithub Pagesを使って公開す
 
 Github Pagesを使うので、HTML + Javascriptで作る必要があります。
 
-そのうちJekyllなんかを使ったほうがいいかも。
-
+Middlemanを使ってます。
 
 # サイト一覧
 * [TOP](http://unionfes.tojok-on.com/)
 * [2012](http://unionfes.tojok-on.com/2012/)
 * [2013](http://unionfes.tojok-on.com/2013/)
 * [2014](http://unionfes.tojok-on.com/2014/)
+* [2015](http://unionfes.tojok-on.com/2015/)
 
 # 開発について
-## 準備
-コードをGithubからとってくる。
+Wikiにまとめました。
 
-```bash
-git clone git@github.com:unionfes/unionfes.github.io.git
-cd unionfes.github.io
-git checkout source
-```
-
-Middlemanとかをインストール。
-
-```bash
-bundle install --path vendor/bundle
-```
-
-## 開発中のサイト確認
-Middlemanのサーバを実行すればおk。
-
-```bash
-bundle exec middleman
-```
-
-これでローカルにサーバがたつので、`http://localhost:4567/`で開発中のサイトが確認できる。
+* [Setup](https://github.com/unionfes/unionfes.github.io/wiki/Setup)
+  * Rubyインストール
+  * レポジトリ準備
+  * Middlemanインストール
+* [Flow](https://github.com/unionfes/unionfes.github.io/wiki/Flow)
+  * 開発の流れ
+  * ブランチの作成とかプッシュとか
+* [Reference](https://github.com/unionfes/unionfes.github.io/wiki/Reference)
+  * お勉強
+  * 参考になりそうなサイトまとめ
