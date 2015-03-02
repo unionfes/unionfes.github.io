@@ -30,3 +30,21 @@ Wikiにまとめました。
 * [Reference](https://github.com/unionfes/unionfes.github.io/wiki/Reference)
   * お勉強
   * 参考になりそうなサイトまとめ
+
+# 使ってる技術とか
+* ある程度わからないときつい
+  * Git
+  * Github
+  * HTML
+  * CSS
+  * Middleman
+* わかるととてもいい
+  * Slim: イケてるHTMLテンプレート
+  * SCSS: イケてるSass
+* わかるといいかも
+  * YAML: Middlemanのデータファイル
+  * Github Pages: Unionサイトのサーバ
+* それほどでも
+  * Ruby: MiddlemanはRubyで動作。設定ファイルもRuby
+  * Markdown: READMEとかGithubはMarkdown
+  * Wercker: Github Pagesへのデプロイに使ってる
