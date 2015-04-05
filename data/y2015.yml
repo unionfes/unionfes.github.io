@@ -1,0 +1,45 @@
+bands:
+  - id: band1
+    name: ZAKION YO-ICHI MAHOTK
+    description:
+    members: []
+  - id: band2
+    name: WonE
+    description:
+    members: []
+  - id: band3
+    name: 死んだ木
+    description:
+    members: []
+  - id: band4
+    name: ナマステ
+    description:
+    members: []
+  - id: band5
+    name: All Need Guilty Lyrics
+    description:
+    members: []
+  - id: band6
+    name: hogehoge
+    description:
+    members: []
+  - id: band7
+    name: キミに熱中症
+    description:
+    members: []
+  - id: band8
+    name: 安佐南区からやってまいりました
+    description:
+    members: []
+  - id: band9
+    name: THE TEKERE
+    description: "The METAL"
+    members:
+      - ["Vo.",  "TENCHO"]
+      - ["Vo.",  "MUTEKI"]
+      - ["Gt.",  "MOTCHY"]
+      - ["Gt.",  "TACKEY"]
+      - ["Ba.",  "SOWKEY"]
+      - ["Key.", "SHOWTA"]
+      - ["Ds.",  "SHOWGO"]
+      - ["Cho.", "MOMOKA"]
