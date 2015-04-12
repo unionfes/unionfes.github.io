@@ -18,8 +18,8 @@ html
     meta property="fb:admins" content="100005574188772"
     title= current_page.data.title || "TOJO K-ON Union Fes"
 
-    = stylesheet_link_tag "normalize", "default"
-    = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    = stylesheet_link_tag "normalize"
+    / = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
     - if current_page.data.stylesheets
       = stylesheet_link_tag current_page.data.stylesheets
 
@@ -32,9 +32,5 @@ html
       ga('create', 'UA-37580164-3', 'auto');
       ga('send', 'pageview');
 
-  body class=page_classes
+  body
     = yield
-
-    = javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
-      async: "async", defer: "defer"
-    = javascript_include_tag "default", async: "async", defer: "defer"

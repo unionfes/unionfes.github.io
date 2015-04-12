@@ -1,3 +1,19 @@
+require "lib/display_length"
+helpers DisplayLength
+
+module StringExt
+  def ljust(size, padstr = ' ')
+    if length == bytesize
+      super
+    else
+      size = size - length
+      super(size, padstr)
+    end
+  end
+end
+
+String.send(:prepend, StringExt)
+
 ###
 # Compass
 ###

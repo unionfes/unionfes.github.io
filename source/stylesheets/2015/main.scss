@@ -1,0 +1,299 @@
+@mixin background($file) {
+  background: {
+    image: url('../../images/2015/' + $file);
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+@mixin vertical-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+a.external::after {
+  vertical-align: middle;
+  content: url(/images/2015/external_link.png);
+  margin-left: 5px;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  font: {
+    size: 0.8rem;
+    family: Ubuntu;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    
+    a {
+      display: block;
+      padding: 5px 0px;
+      text-decoration: none;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  li.active {
+    a {
+      background: rgba(255, 255, 255, 0.2);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  li.band {
+    width: auto;
+    
+    a {
+      padding: 5px 5px;
+    }
+  }
+}
+
+div.section {
+  width: 100%;
+}
+ 
+div#title-section {
+  @include background('title-section.jpg');
+  width: 100%;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font: {
+      family: Hind;
+      weight: 700;
+      size: 5rem;
+    }
+  }
+
+  p.date-and-place {
+    width: 100%;
+    text-align: center;
+    font: {
+      family: Ubuntu;
+      weight: 400;
+      size: 2rem;
+    }
+  }
+
+  p.info {
+    width: 100%;
+    text-align:center;
+    font: {
+      family: Ubuntu;
+      weight: 400;
+      size: 2rem;
+    }
+  }
+
+  p.bands {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font: {
+      family: Ubuntu;
+      weight: 400;
+      size: 1.5rem;
+    }
+
+    span.band {
+      margin: 0 1rem;
+    }
+  }
+}
+
+div.band {
+  width: 100%;
+
+  div.fp-tableCell {
+    vertical-align: top;
+  }
+}
+
+//div#band9-section {
+div.band {
+  text-shadow: 0 -1px 10px #000, 1px 0 10px #000, 0 1px 10px #000, -1px 0 10px #000;
+
+  div.band-container {
+    h2.band-name {
+      margin: 5rem 0 0 1rem;
+      padding: 0;
+      font: {
+        family: Hind;
+        weight: 700;
+        size: 9rem;
+      }
+    }
+
+    div.description {
+      margin: 0 0 0 2rem;
+      padding: 0;
+      font: {
+        family: Ubuntu;
+        weight: 400;
+        size: 2rem;
+      }
+    }
+
+    div.members {
+      margin: 1rem 0 0 2rem;
+      font: {
+        family: 'Ubuntu Mono', 'Droid Sans Mono';
+        size: 2rem;
+      }
+    }
+  }
+}
+
+div#band1-section {
+  @include background('zakion-bg.jpg');
+
+  .band-container {
+    .band-name {
+      font-family: 'Passion One', cursive;
+    }
+  }
+}
+
+div#band2-section {
+  @include background('wone-bg.jpg');
+  background-position: top center;
+  text-align: center;
+  color: #555;
+
+  .band-container {
+    @include vertical-middle;
+    
+    .band-name {
+      font-family: 'Shadows Into Light', cursive;
+    }
+  } 
+}
+
+div#band3-section {
+  @include background('ki-bg.jpg');
+  color: #daa520;
+
+  .band-container {
+    position: absolute;
+    right: 5rem;
+
+    .members {
+    }
+  }
+}
+
+div#band6-section {
+  @include background('hogehoge-bg.jpg');
+  background-position: top center;
+
+  .band-container {
+    @include vertical-middle;
+
+    .band-name {
+      font-family: 'Chewy', cursive;
+    }
+  }
+}
+
+@font-face {
+  font-family: mitimasu;
+  src: url('mitimasu.ttf');
+}
+
+div#band7-section {
+  @include background('kimi-bg.jpg');
+
+  .band-container {
+    .band-name {
+      font-family: mitimasu;
+    }
+  }
+}
+
+div#band9-section {
+  @include background('tekere-bg.jpg');
+}
+
+div.info {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin-bottom: -10px;
+    font: {
+      family: Hind;
+      weight: 700;
+      size: 5rem;
+    }
+  }
+
+  a {
+    color: #9cf;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  div.content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul.pasts {
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+div#about-section {
+  div.content {
+    text-align: left;
+  }
+}
+
+div#access-section {
+  iframe {
+    width: 600px;
+    height: 480px;
+  }
+}
+
+div#price-section {
+
+}
