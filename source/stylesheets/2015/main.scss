@@ -168,6 +168,31 @@ div#band3-section {
   color: #daa520;
 }
 
+@font-face {
+  font-family: riit;
+  src: url('RiiT_F.otf');
+}
+div#band4-section {
+  @include background('namasute-bg.jpg');
+  //text-shadow: 0 -1px 10px #ddd, 1px 0 10px #ddd, 0 1px 10px #ddd, -1px 0 10px #ddd;
+
+  .band-container {
+    .band-name {
+      font-family: riit;
+    }
+  }
+}
+
+div#band5-section {
+  @include background('angl-bg.jpg');
+
+  .band-container {
+    .band-name {
+      font-family: 'Tangerine', cursive;
+    }
+  }
+}
+
 div#band6-section {
   @include background('hogehoge-bg.jpg');
   background-position: top center;

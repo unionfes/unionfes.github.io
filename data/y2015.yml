@@ -39,8 +39,17 @@ bands:
       - ["キーボード・サンプラー", "佐藤周平"]
   - id: band5
     name: All Need Guilty Lyrics
-    description:
-    members: []
+    description: |-
+      This is Hardcore & Scream
+      Cover of Foreground Eclipse
+    members:
+      - ["Vocal", "ARA"]
+      - ["Scream", "OMDX"]
+      - ["Guitar", "No Enemy"]
+      - ["Guitar", "Fuzz Girl"]
+      - ["Bass", "Ayabe"]
+      - ["Keyboard", "Arice"]
+      - ["Dr", "Masa"]
   - id: band6
     name: hogehoge
     description: |-

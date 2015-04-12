@@ -21,8 +21,9 @@
 
   div.band {
     div.band-container {
+      padding-top: 7rem;
       h2.band-name {
-        margin: 5rem 0 0 1rem;
+        margin: 0 0 0 1rem;
         font-size: 9rem;
       }
 
@@ -52,6 +53,29 @@
     .band-container {
       position: absolute;
       right: 5rem;
+    }
+  }
+
+  div#band4-section {
+    .band-container {
+      .band-name {
+        color: #000;
+        text-shadow: none;
+      }
+    }
+  }
+
+  div#band5-section {
+    .band-container {
+      .description {
+        position: absolute;
+        bottom: 18rem;
+      }
+
+      .members {
+        position: absolute;
+        bottom: 2rem;
+      }
     }
   }
 
