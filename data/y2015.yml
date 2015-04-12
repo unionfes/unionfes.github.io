@@ -5,10 +5,10 @@ bands:
       ヒット曲からマニアックな曲まで。
       今回は‘‘僕等なりのBEST HIT AKG’’！
     members:
-      - ["Gt/Vo", "尾崎僚"]
-      - ["Gt/Vo", "村本耀一"]
-      - ["Ba/Cho", "八塚真帆"]
-      - ["Dr", "高橋一貴"]
+      - ["Gt./Vo.", "尾崎僚"]
+      - ["Gt./Vo.", "村本耀一"]
+      - ["Ba./Cho.", "八塚真帆"]
+      - ["Dr.", "高橋一貴"]
   - id: band2
     name: WonE (Wonder Erection)
     description: ハードコアはじめました。
@@ -16,15 +16,15 @@ bands:
       - ["Vo.", "箕ディック"]
       - ["Gt.", "橋ディック"]
       - ["Ba.", "大ディック"]
-      - ["BaVI.", "谷ディック"]
+      - ["Ba.VI", "谷ディック"]
       - ["Dr.", "正ディック"]
   - id: band3
     name: 死んだ木
     description: グランジ的精神
     members:
-      - ["Gt/Vo", "井上雄人"]
-      - ["Ba/Cho", "橋本歩"]
-      - ["Dr", "村田陵"]
+      - ["Gt./Vo.", "井上雄人"]
+      - ["Ba./Cho.", "橋本歩"]
+      - ["Dr.", "村田陵"]
   - id: band4
     name: ナマステ
     description: |-
@@ -49,27 +49,27 @@ bands:
       - ["Guitar", "Fuzz Girl"]
       - ["Bass", "Ayabe"]
       - ["Keyboard", "Arice"]
-      - ["Dr", "Masa"]
+      - ["Drums", "Masa"]
   - id: band6
     name: hogehoge
     description: |-
       2014年2月より活動しているフーバーオーバーのコピーバンド。
       予習してこないと元腹パン副代表の右ストレートで火星まで飛ばされるとの噂。
     members:
-      - ["", "塩原"]
-      - ["", "藤浦"]
-      - ["", "清野"]
-      - ["", "TK"]
+      - ["Vo./Gt.", "塩原"]
+      - ["Gt.", "藤浦"]
+      - ["Ba.", "清野"]
+      - ["Dr.", "TK"]
   - id: band7
     name: キミに熱中症
     description: |-
       Base Ball Bearのコピーバンド。
       檸檬をかじるような青春の爽やかなロックをお届けします。
     members:
-      - ["Vo&Gt", "林亮太(はやし)"]
-      - ["Gt", "山崎祐(やまさき)"]
-      - ["Ba&Cho", "志村友梨(しむしむ)"]
-      - ["Dr", "横田亜蘭(アラン)"]
+      - ["Vo./Gt.", "林亮太(はやし)"]
+      - ["Gt.", "山崎祐(やまさき)"]
+      - ["Ba./Cho.", "志村友梨(しむしむ)"]
+      - ["Dr.", "横田亜蘭(アラン)"]
   - id: band8
     name: 安佐南区からやってまいりました
     description:
