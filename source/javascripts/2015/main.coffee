@@ -17,8 +17,8 @@ $(document).ready ->
   $("#container").fullpage({
     anchors: anchors,
     menu: "#menu",
-    navigation: true,
-    navigationPosition: "right"
+    #navigation: true,
+    #navigationPosition: "right"
     continuousVertical: true,
     scrollingSpeed: 700,
     #responsive: 1024,
