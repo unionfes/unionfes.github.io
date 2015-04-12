@@ -7,6 +7,14 @@
   }
 }
 
+@mixin vertical-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -58,6 +66,14 @@ a.external::after {
       &:hover {
         background: rgba(255, 255, 255, 0.3);
       }
+    }
+  }
+
+  li.band {
+    width: auto;
+    
+    a {
+      padding: 5px 5px;
     }
   }
 }
@@ -129,31 +145,99 @@ div.band {
 div.band {
   text-shadow: 0 -1px 10px #000, 1px 0 10px #000, 0 1px 10px #000, -1px 0 10px #000;
 
-  h2.band-name {
-    margin: 5rem 0 0 1rem;
-    padding: 0;
-    font: {
-      family: Hind;
-      weight: 700;
-      size: 9rem;
+  div.band-container {
+    h2.band-name {
+      margin: 5rem 0 0 1rem;
+      padding: 0;
+      font: {
+        family: Hind;
+        weight: 700;
+        size: 9rem;
+      }
+    }
+
+    div.description {
+      margin: 0 0 0 2rem;
+      padding: 0;
+      font: {
+        family: Ubuntu;
+        weight: 400;
+        size: 2rem;
+      }
+    }
+
+    div.members {
+      margin: 1rem 0 0 2rem;
+      font: {
+        family: 'Ubuntu Mono', 'Droid Sans Mono';
+        size: 2rem;
+      }
     }
   }
+}
 
-  div.description {
-    margin: 0 0 0 2rem;
-    padding: 0;
-    font: {
-      family: Ubuntu;
-      weight: 400;
-      size: 2rem;
+div#band1-section {
+  @include background('zakion-bg.jpg');
+
+  .band-container {
+    .band-name {
+      font-family: 'Passion One', cursive;
     }
   }
+}
 
-  div.members {
-    margin: 1rem 0 0 2rem;
-    font: {
-      family: 'Ubuntu Mono', 'Droid Sans Mono';
-      size: 2rem;
+div#band2-section {
+  @include background('wone-bg.jpg');
+  background-position: top center;
+  text-align: center;
+  color: #555;
+
+  .band-container {
+    @include vertical-middle;
+    
+    .band-name {
+      font-family: 'Shadows Into Light', cursive;
+    }
+  } 
+}
+
+div#band3-section {
+  @include background('ki-bg.jpg');
+  color: #daa520;
+
+  .band-container {
+    position: absolute;
+    right: 5rem;
+
+    .members {
+    }
+  }
+}
+
+div#band6-section {
+  @include background('hogehoge-bg.jpg');
+  background-position: top center;
+
+  .band-container {
+    @include vertical-middle;
+
+    .band-name {
+      font-family: 'Chewy', cursive;
+    }
+  }
+}
+
+@font-face {
+  font-family: mitimasu;
+  src: url('mitimasu.ttf');
+}
+
+div#band7-section {
+  @include background('kimi-bg.jpg');
+
+  .band-container {
+    .band-name {
+      font-family: mitimasu;
     }
   }
 }

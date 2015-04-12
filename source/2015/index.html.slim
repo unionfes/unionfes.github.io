@@ -2,12 +2,15 @@
 title: "TOJO K-ON Union Fes '15"
 image: "http://unionfes.tojok-on.com/images/2015/landing/img_title.png"
 stylesheets:
-  - "//fonts.googleapis.com/css?family=Passion+One:900"
+  - "//fonts.googleapis.com/css?family=Passion+One:400,700,900"
   - "//fonts.googleapis.com/css?family=Hind:700"
   - "//fonts.googleapis.com/css?family=Ubuntu:400,500"
   - "//fonts.googleapis.com/css?family=Droid+Sans+Mono"
   - "//fonts.googleapis.com/css?family=Ubuntu+Mono"
   - "//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+  - "//fonts.googleapis.com/css?family=Sigmar+One"
+  - "//fonts.googleapis.com/css?family=Chewy"
+  - "//fonts.googleapis.com/css?family=Shadows+Into+Light"
   - "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css"
   - "2015/main.css"
 ---
@@ -20,13 +23,15 @@ div.container#container
 
   - data.y2015.bands.each do |band|
     div.band.section id="#{band["id"]}-section"
-      h2.band-name = band["name"]
-      div.description = band["description"]
-      div.members
-        - band["members"].each do |member|
-          div.member
-            span.part = member[0].ljust(5, ).gsub(/\s/, "&nbsp;")
-            span.name = member[1]
+      div.band-container
+        h2.band-name = band["name"]
+        div.description = (band["description"] || "").gsub(/\n/, "<br>")
+        div.members
+          - max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?
+          - band["members"].each do |member|
+            div.member
+              span.part = member[0].ljust(max_length + 1).gsub(/\s/, "&nbsp;")
+              span.name = member[1]
 
   div.info.section#about-section
     h2 About Union Fes
@@ -63,14 +68,33 @@ div.container#container
 ul#menu
   li.active data-menuanchor="title"
     a href="#title" Top
-  li data-menuanchor="band1"
-    a href="#band1" Band
   li data-menuanchor="about"
     a href="#about" About
   li data-menuanchor="access"
     a href="#access" Access
   li data-menuanchor="price"
     a href="#price" Price
+
+  br
+
+  li.band data-menuanchor="band1"
+    a href="#band1" ZAKION YO-ICHI MAHOTK
+  li.band data-menuanchor="band2"
+    a href="#band2" WonE
+  li.band data-menuanchor="band3"
+    a href="#band3" 死んだ木
+  li.band data-menuanchor="band4"
+    a href="#band4" ナマステ
+  li.band data-menuanchor="band5"
+    a href="#band5" All Need Guilty Lyrics
+  li.band data-menuanchor="band6"
+    a href="#band6" hogehoge
+  li.band data-menuanchor="band7"
+    a href="#band7" キミに熱中症
+  li.band data-menuanchor="band8"
+    a href="#band8" 安佐南区からやってまいりました
+  li.band data-menuanchor="band9"
+    a href="#band9" THE TEKERE
 
 = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
 /= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
