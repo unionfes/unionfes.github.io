@@ -1,19 +1,9 @@
-@mixin background($file) {
-  background: {
-    image: url('../../images/2015/' + $file);
-    position: center center;
-    repeat: no-repeat;
-    size: cover;
-  }
-}
+/*
+ *= require 2015/responsive_small
+ *= require 2015/responsive_large
+ */
 
-@mixin vertical-middle {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+@import 'mixin';
 
 body {
   background-color: #000;
@@ -92,7 +82,6 @@ div#title-section {
     font: {
       family: Hind;
       weight: 700;
-      size: 5rem;
     }
   }
 
@@ -102,7 +91,6 @@ div#title-section {
     font: {
       family: Ubuntu;
       weight: 400;
-      size: 2rem;
     }
   }
 
@@ -112,23 +100,6 @@ div#title-section {
     font: {
       family: Ubuntu;
       weight: 400;
-      size: 2rem;
-    }
-  }
-
-  p.bands {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font: {
-      family: Ubuntu;
-      weight: 400;
-      size: 1.5rem;
-    }
-
-    span.band {
-      margin: 0 1rem;
     }
   }
 }
@@ -147,30 +118,25 @@ div.band {
 
   div.band-container {
     h2.band-name {
-      margin: 5rem 0 0 1rem;
       padding: 0;
+
       font: {
         family: Hind;
         weight: 700;
-        size: 9rem;
       }
     }
 
     div.description {
-      margin: 0 0 0 2rem;
       padding: 0;
       font: {
         family: Ubuntu;
         weight: 400;
-        size: 2rem;
       }
     }
 
     div.members {
-      margin: 1rem 0 0 2rem;
       font: {
         family: 'Ubuntu Mono', 'Droid Sans Mono';
-        size: 2rem;
       }
     }
   }
@@ -189,12 +155,9 @@ div#band1-section {
 div#band2-section {
   @include background('wone-bg.jpg');
   background-position: top center;
-  text-align: center;
   color: #555;
 
   .band-container {
-    @include vertical-middle;
-    
     .band-name {
       font-family: 'Shadows Into Light', cursive;
     }
@@ -204,14 +167,6 @@ div#band2-section {
 div#band3-section {
   @include background('ki-bg.jpg');
   color: #daa520;
-
-  .band-container {
-    position: absolute;
-    right: 5rem;
-
-    .members {
-    }
-  }
 }
 
 div#band6-section {
@@ -219,8 +174,6 @@ div#band6-section {
   background-position: top center;
 
   .band-container {
-    @include vertical-middle;
-
     .band-name {
       font-family: 'Chewy', cursive;
     }
@@ -255,7 +208,6 @@ div.info {
     font: {
       family: Hind;
       weight: 700;
-      size: 5rem;
     }
   }
 
@@ -269,7 +221,6 @@ div.info {
   }
 
   div.content {
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -288,12 +239,7 @@ div#about-section {
 }
 
 div#access-section {
-  iframe {
-    width: 600px;
-    height: 480px;
-  }
 }
 
 div#price-section {
-
 }
