@@ -188,7 +188,10 @@ div#band5-section {
 
   .band-container {
     .band-name {
-      font-family: 'Tangerine', cursive;
+      font: {
+        family: 'Tangerine', cursive;
+        weight: 700;
+      }
     }
   }
 }
