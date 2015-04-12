@@ -27,11 +27,12 @@ div.container#container
         h2.band-name = band["name"]
         div.description = (band["description"] || "").gsub(/\n/, "<br>")
         div.members
-          - max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?
+          - part_max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?
+          - name_max_length = length(band["members"].max_by { |m| length(m[1]) }[1]) unless band["members"].empty?
           - band["members"].each do |member|
             div.member
-              span.part = member[0].ljust(max_length + 1).gsub(/\s/, "&nbsp;")
-              span.name = member[1]
+              span.part = member[0].ljust(part_max_length + 1).gsub(/\s/, "&nbsp;")
+              span.name = member[1].ljust(name_max_length).gsub(/\s/, "&nbsp;")
 
   div.info.section#about-section
     h2 About Union Fes
@@ -68,6 +69,8 @@ div.container#container
 ul#menu
   li.active data-menuanchor="title"
     a href="#title" Top
+  li data-menuanchor="band1"
+    a href="#band1" Band
   li data-menuanchor="about"
     a href="#about" About
   li data-menuanchor="access"

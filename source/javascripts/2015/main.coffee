@@ -20,6 +20,7 @@ $(document).ready ->
     navigation: true,
     navigationPosition: "right"
     continuousVertical: true,
-    scrollingSpeed: 700;
+    scrollingSpeed: 700,
+    #responsive: 1024,
   })
   @
