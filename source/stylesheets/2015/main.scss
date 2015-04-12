@@ -23,6 +23,8 @@ a.external::after {
   left: 0;
   z-index: 70;
   width: 100%;
+  margin-left: 5px;
+  padding: 0;
   font: {
     size: 0.8rem;
     family: Ubuntu;
@@ -31,13 +33,14 @@ a.external::after {
   li {
     display: inline-block;
     margin: 5px;
-    width: 100px;
     
     a {
+      height: 1rem;
       display: block;
-      padding: 5px 0px;
+      padding: 5px;
       text-decoration: none;
       text-align: center;
+      vertical-align: middle;
       background: rgba(255, 255, 255, 0.1);
       color: #fff;
       -webkit-border-radius: 5px;
@@ -61,10 +64,6 @@ a.external::after {
 
   li.band {
     width: auto;
-    
-    a {
-      padding: 5px 5px;
-    }
   }
 }
 

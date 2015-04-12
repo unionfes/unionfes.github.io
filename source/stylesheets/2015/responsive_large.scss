@@ -1,6 +1,10 @@
 @import 'mixin';
 
 @media screen and (min-width: 1024px) {
+  #menu {
+    li { width: 100px; }
+  }
+
   div#title-section {
     h1 {
       font-size: 5rem;
