@@ -10,6 +10,15 @@ module StringExt
       super(size, padstr)
     end
   end
+
+  def rjust(size, padstr = ' ')
+    if length == bytesize
+      super
+    else
+      size = size - length
+      super(size, padstr)
+    end
+  end
 end
 
 String.send(:prepend, StringExt)
