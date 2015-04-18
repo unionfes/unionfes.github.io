@@ -82,24 +82,10 @@ ul#menu
 
   br
 
-  li.band data-menuanchor="band1"
-    a href="#band1" ZAKION YO-ICHI MAHOTK
-  li.band data-menuanchor="band2"
-    a href="#band2" WonE
-  li.band data-menuanchor="band3"
-    a href="#band3" 死んだ木
-  li.band data-menuanchor="band4"
-    a href="#band4" ナマステ
-  li.band data-menuanchor="band5"
-    a href="#band5" All Need Guilty Lyrics
-  li.band data-menuanchor="band6"
-    a href="#band6" hogehoge
-  li.band data-menuanchor="band7"
-    a href="#band7" キミに熱中症
-  li.band data-menuanchor="band8"
-    a href="#band8" 安佐南区からやってまいりました
-  li.band data-menuanchor="band9"
-    a href="#band9" THE TEKERE
+  div#bands-menu
+    - data.y2015.bands.each do |band|
+      li.band data-menuanchor="#{band["id"]}"
+        a href="##{band["id"]}" = band["name"]
 
 = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
 /= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \

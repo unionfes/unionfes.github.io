@@ -3,6 +3,13 @@
 @media screen and (min-width: 1024px) {
   #menu {
     li { width: 100px; }
+
+    #bands-menu {
+      position: fixed;
+      bottom: 0;
+      
+      li.band { width: auto; }
+    }
   }
 
   div#title-section {
@@ -69,12 +76,12 @@
     .band-container {
       .description {
         position: absolute;
-        bottom: 18rem;
+        bottom: 20rem;
       }
 
       .members {
         position: absolute;
-        bottom: 2rem;
+        bottom: 4rem;
       }
     }
   }

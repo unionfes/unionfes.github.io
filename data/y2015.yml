@@ -71,9 +71,13 @@ bands:
       - ["Ba./Cho.", "志村友梨(しむしむ)"]
       - ["Dr.", "横田亜蘭(アラン)"]
   - id: band8
-    name: 安佐南区からやってまいりました
-    description:
-    members: []
+    name: 数の子少女
+    description: ナンバーガールのコピーです！
+    members:
+      - ["Vo./Gt.", "たま"]
+      - ["Gt.", "たな"]
+      - ["Ba.", "かわ"]
+      - ["Dr.", "やじまさん"]
   - id: band9
     name: THE TEKERE
     description: "The METAL"
