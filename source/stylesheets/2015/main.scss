@@ -217,6 +217,10 @@ div#band7-section {
   }
 }
 
+div#band8-section {
+  @include background('kazunoko-bg.jpg');
+}
+
 div#band9-section {
   @include background('tekere-bg.jpg');
 }
