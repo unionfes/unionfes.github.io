@@ -13,6 +13,7 @@ $(document).ready ->
     "about"
     "access"
     "price"
+    "tshirt"
   ]
   $("#container").fullpage({
     anchors: anchors,
