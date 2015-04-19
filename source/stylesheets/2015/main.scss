@@ -76,6 +76,7 @@ div#title-section {
   h1 {
     width: 100%;
     text-align: center;
+    margin-bottom: -60px;
     font: {
       family: Hind;
       weight: 700;
@@ -93,10 +94,12 @@ div#title-section {
 
   p.info {
     width: 100%;
+    margin: 10px;
     text-align:center;
     font: {
       family: Ubuntu;
       weight: 400;
+      size: 1.8em;
     }
   }
 }
