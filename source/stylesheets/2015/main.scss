@@ -29,11 +29,10 @@ a.external::after {
     size: 0.8rem;
     family: Ubuntu;
   }
-
   li {
     display: inline-block;
     margin: 5px;
-    
+
     a {
       height: 1rem;
       display: block;
@@ -64,6 +63,10 @@ a.external::after {
 
 div.section {
   width: 100%;
+
+  ul.pasts{
+    padding: 0;
+  }
 }
  
 div#title-section {
