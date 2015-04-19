@@ -29,6 +29,7 @@ a.external::after {
     size: 0.8rem;
     family: Ubuntu;
   }
+
   li {
     display: inline-block;
     margin: 5px;
@@ -74,18 +75,17 @@ div#title-section {
   width: 100%;
 
   h1 {
+    margin: 0;
+    padding: 0;
     width: 100%;
     text-align: center;
-    margin-bottom: -60px;
     font: {
       family: Hind;
       weight: 700;
     }
-    img{
-      @media screen and (max-width: 600px){
-        width: 80%;
-        margin-bottom: 70px;
-      }
+
+    img {
+      max-width: 400px;
     }
   }
 
