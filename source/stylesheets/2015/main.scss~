@@ -29,6 +29,9 @@ a.external::after {
     size: 0.8rem;
     family: Ubuntu;
   }
+  ul.pasts{
+    padding: 0;
+  }
   li {
     display: inline-block;
     margin: 5px;
@@ -63,10 +66,6 @@ a.external::after {
 
 div.section {
   width: 100%;
-
-  ul.pasts{
-    padding: 0;
-  }
 }
  
 div#title-section {
@@ -76,16 +75,9 @@ div#title-section {
   h1 {
     width: 100%;
     text-align: center;
-    margin-bottom: -60px;
     font: {
       family: Hind;
       weight: 700;
-    }
-    img{
-      @media screen and (max-width: 600px){
-        width: 80%;
-        margin-bottom: 70px;
-      }
     }
   }
 
@@ -100,12 +92,10 @@ div#title-section {
 
   p.info {
     width: 100%;
-    margin: 10px;
     text-align:center;
     font: {
       family: Ubuntu;
       weight: 400;
-      size: 1.8em;
     }
   }
 }
