@@ -56,7 +56,11 @@ a{
 		}
 		&-about{
 			@include background('orange_sky.png');
+			h2{
+				color: #666666;
+			}
 			.content{
+				color: #666666;
 				width: 80%;
 				margin: 0 auto;
 				font-size: 4vw;
