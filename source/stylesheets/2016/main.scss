@@ -1,0 +1,68 @@
+@import 'mixin';
+body{
+	color: #eFefef;
+	text-shadow: 0.5px 0.5px 3px #888888;
+
+	font-weight: 200;
+}
+h2{
+	font-family: Uniwerek;
+	font-size: 10vw;
+	font-weight: 100;
+	margin: 10px;
+	margin-bottom: 0;
+	color: white;
+}
+a{
+	color: #666666;
+}
+#container{
+	#section{
+		&-title{
+			@include background('gray_sky.jpg');
+			h1{
+				font-family: Uniwerek;
+				font-size: 13vw;
+				font-weight: 100;
+				width: 80vw;
+				margin: 10px;
+				color: white;
+			}
+			p{
+				margin: 10px;
+			}
+		}
+		&-landing{
+			@include background('blue_sky.jpg');
+			.landing-container{
+				width: 80vw;
+				margin: 0 auto;
+				text-align: center;
+				h3{
+					font-size: 5vw;
+					text-align: center;
+					font-weight: 100;
+					@media screen and (min-width: 400px) {
+						font-size: 20px;
+					}
+
+				}
+				.cover{
+					font-size: 1vw;
+					text-align: center;
+				}
+			}
+		}
+		&-about{
+			@include background('orange_sky.png');
+			.content{
+				width: 80%;
+				margin: 0 auto;
+				font-size: 4vw;
+				@media screen and (min-width: 400px) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
