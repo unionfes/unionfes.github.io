@@ -1,0 +1,53 @@
+---
+title: "TOJO K-ON Union Fes '16"
+image: "http://unionfes.tojok-on.com/images/2015/landing/img_title.png"
+stylesheets:
+  - "//fonts.googleapis.com/css?family=Passion+One:400,700,900"
+  - "//fonts.googleapis.com/css?family=Hind:700"
+  - "//fonts.googleapis.com/css?family=Ubuntu:400,500"
+  - "//fonts.googleapis.com/css?family=Droid+Sans+Mono"
+  - "//fonts.googleapis.com/css?family=Ubuntu+Mono"
+  - "//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+  - "//fonts.googleapis.com/css?family=Sigmar+One"
+  - "//fonts.googleapis.com/css?family=Chewy"
+  - "//fonts.googleapis.com/css?family=Shadows+Into+Light"
+  - "//fonts.googleapis.com/css?family=Tangerine:400,700"
+  - "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css"
+  - "2016/font.css"
+  - "2016/main.css"
+---
+
+div.container#container
+  div.section.active#section-title
+    h1 = "TOJO K-ON Union Fes '16"
+    p.info Open 14:40 / Start 15:10
+    p.info Uchiage 21:00 / End 23:00
+
+  div.band.section#section-landing
+    h2 = "ARTIST"
+    div.landing-container
+      - data.y2016.bands.each do |band|
+            h3.band-name = band["name"] + " / " + (band["cover"] || "").gsub(/\n/, "<br>")
+
+  div.info.section#section-about
+    h2 About Union Fes
+    div.content
+      p
+        | 筑波大学の軽音サークルTOJO K-ONに関わる全ての人々が世代を超えて全力で楽しむライブイベントです。
+      p
+        | 今年は2016年7月17日に飯田橋SPACEWITHというライブハウスで開催します。
+      p
+        | 過去のサイトで今までのUnion Fesの様子を見ることができるので、是非チェックしてみてください！
+      ul.pasts
+        li = link_to "Union Fes '12", "/2012", target: "_blank"
+        li = link_to "Union Fes '13", "/2013", target: "_blank"
+        li = link_to "Union Fes '14", "/2014", target: "_blank"
+        li = link_to "Union Fes '15", "/2015", target: "_blank"
+ 
+
+= javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
+/= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
+      async: "async", defer: "defer"
+= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.js"
+= javascript_include_tag "2015/main", async: "async", defer: "defer"
+
