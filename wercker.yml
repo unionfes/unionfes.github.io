@@ -7,7 +7,7 @@ build:
   steps:
     # Uncomment this to force RVM to use a specific Ruby version
     - rvm-use:
-        version: 2.2.0
+        version: 2.3.1
 
     # A step that executes `bundle install` command
     - bundle-install
@@ -33,12 +33,12 @@ deploy:
   steps:
     - script:
         name: Configure git
-        code: | 
+        code: |
           git config --global user.name $WERCKER_STARTED_BY
           git config --global user.email $WERCKER_STARTED_BY@wercker.com
     - script:
         name: Configure git remote
-        code: git remote add deploy ssh://git@github.com/unionfes/unionfes.github.io.git 
+        code: git remote add deploy ssh://git@github.com/unionfes/unionfes.github.io.git
     - script:
         name: make .ssh directory
         code: mkdir -p "$HOME/.ssh"
