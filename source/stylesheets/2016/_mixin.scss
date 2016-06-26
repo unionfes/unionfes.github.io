@@ -14,3 +14,15 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@mixin Uniwerek{
+  font-family: Uniwerek;
+  font-weight: 100;
+}
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

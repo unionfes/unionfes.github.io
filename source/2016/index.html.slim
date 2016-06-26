@@ -24,16 +24,16 @@ div.container#container
     p.info Uchiage 21:00 / End 23:00
 
   div.band.section#section-landing
-    h2 = "ARTIST"
+    h2 = "TIMETABLE"
     table.landing-container
       tbody
         - data.y2016.bands.each do |band|
           tr
-            td
-              a href="##{band["name"]}"
+            td.description
+              a href="##{band["id"]}"
                 div = band["name"]
-                div = "(" + (band["cover"] || "").gsub(/\n/, "<br>") + ")"
-            td = band["start"].to_s + "〜" + band["end"].to_s
+                div = "（" + (band["cover"] || "").gsub(/\n/, "<br>") + "）"
+            td.time = band["start"].to_s + "〜" + band["end"].to_s
 
   - data.y2016.bands.each do |band|
     section.band.section id="section-#{band["id"]}"
@@ -45,7 +45,7 @@ div.container#container
           - name_max_length = length(band["members"].max_by { |m| length(m[1]) }[1]) unless band["members"].empty?
           - band["members"].each do |member|
             li.member
-              span.part = member[0].ljust(part_max_length + 1).gsub(/\s/, "&nbsp;")
+              span.part = member[0].ljust(part_max_length + 1)
               span.name = member[1].ljust(name_max_length).gsub(/\s/, "&nbsp;")
 
   div.info.section#section-about
