@@ -32,6 +32,34 @@ a{
 				margin: 10px;
 			}
 		}
+		&-band1{
+			@include background('band1.jpg');
+		}
+		&-band2{
+			@include background('band2.jpg');
+		}
+		&-band3{
+			@include background('band3.jpg');
+		}
+		&-band4{
+			@include background('band4.jpg');
+		}
+		&-band5{
+			@include background('band5.jpg');
+		}
+		&-band6{
+			@include background('band6.jpg');
+		}
+		&-band7{
+			@include background('band7.jpg');
+		}
+		&-band8{
+			@include background('band8.jpg');
+		}
+		&-band9{
+			@include background('band9.jpg');
+		}
+
 		&-landing{
 			@include background('blue_sky.jpg');
 			.landing-container{

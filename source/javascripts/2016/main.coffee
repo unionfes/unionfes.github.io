@@ -1,9 +1,17 @@
 $(document).ready ->
   anchors = [
     "title"
-    "band"
+    "landing"
+    "band1"
+    "band2"
+    "band3"
+    "band4"
+    "band5"
+    "band6"
+    "band7"
+    "band8"
+    "band9"
     "about"
-
   ]
   $("#container").fullpage({
     anchors: anchors,
