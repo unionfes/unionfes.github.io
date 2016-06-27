@@ -1,19 +1,21 @@
 bands:
   - id: band1
-    num: 1
+    start: 15：10
+    end: 15：45
     name: Upper Limited
     cover: Do As Infinity
     description: |-
       本日は晴天、晴天なり…アリアドネの糸に導かれし5人の冒険者たちが、
       いま天国の扉を開けて集う…7・17、ホリデイの夜明けは近い！
     members:
+      - ["Ba.", "増本隼"]
+      - ["Key.", "前川翔太"]
       - ["Vo.", "有川美貴子"]
       - ["Gt.", "中沢彰吾"]
-      - ["Ba.", "増本隼"]
       - ["Dr.", "横田亜蘭"]
-      - ["Key.", "前川翔太"]
   - id: band2
-    num: 2
+    start: 15：45
+    end: 16：20
     name: おはようチュパカブラ
     cover: おやすみホログラム
     description: |-
@@ -27,29 +29,32 @@ bands:
       - ["Ba.", "カメラ屋"]
       - ["Dr.", "院生"]
   - id: band3
-    num: 3
+    start: 16：20
+    end: 16：55
     name: ミッシェルガンエレファントズ
     cover: Thee MIchelle Gun Elephant
     description: 俺たちが日本のミッシェルガンエレファントズだ！
     members:
-      - ["Gt./Vo.", "いとう"]
+      - ["Dr.", "わっきー"]
       - ["Gt.", "ねもと"]
       - ["Ba.", "かわかみ"]
-      - ["Dr.", "わっきー"]
+      - ["Gt./Vo.", "いとう"]
   - id: band4
-    num: 4
+    start: 16：55
+    end: 17：30
     name: ケバブだいしゅきホールディングしゅ
     cover: the pillows
     description: |-
       愛のないだいしゅきホールドはだいしゅきホールドではなくただのホールド。
       ちなみに古くからは四十八手にて「抱き地蔵」「足からめ」などの呼称があったとされる。
     members:
+      - ["Dr./Vo.", "田中翔一"]
+      - ["Ba./Vo.", "志村友梨"]
       - ["Gt./Vo.", "玉田嘉彦"]
       - ["Gt./Vo.", "村本燿一"]
-      - ["Ba./Vo.", "志村友梨"]
-      - ["Dr./Vo.", "田中翔一"]
   - id: band5
-    num: 5
+    start: 17：30
+    end: 18：05
     name: 女子高生模倣犯
     cover: 女子高生型キラキラオリジナルバンド
     description: |-
@@ -62,17 +67,19 @@ bands:
       - ["Dr./Cho.", "まほ"]
       - ["Ba./Cho.", "まどか"]
   - id: band6
-    num: 6
-    name: 深淵な音楽
+    start: 18：05
+    end: 18：40
+    name: 深淵会
     cover: 深淵な音楽をやります。
     description: ベクトルが似た根暗野郎が集まりました。
     members:
       - ["Vo./Gt.", "大山"]
       - ["Ba.", "橋本"]
       - ["Dr.", "玉谷"]
-      - ["Vo./Gt.", "？？"]
+      - ["Vo./Gt.", "井上"]
   - id: band7
-    num: 7
+    start: 18：40
+    end: 19：15
     name: 募集中
     cover: オリジナル
     description: 行くぜ！！！！！
@@ -82,7 +89,8 @@ bands:
       - ["Ba.", "タカ"]
       - ["Dr.", "やじま"]
   - id: band8
-    num: 8
+    start: 19：15
+    end: 19：50
     name: 特番
     cover: 東京事変
     description: |-
@@ -95,7 +103,8 @@ bands:
       - ["Dr.", "TK"]
       - ["Key.", "mep"]
   - id: band9
-    num: 9
+    start: 19：50
+    end: 20：25
     name: あんどーなつ
     cover: UNLIMITS
     description: 今回唯一３年目のみの現役枠です

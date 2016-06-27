@@ -24,10 +24,29 @@ div.container#container
     p.info Uchiage 21:00 / End 23:00
 
   div.band.section#section-landing
-    h2 = "ARTIST"
-    div.landing-container
-      - data.y2016.bands.each do |band|
-            h3.band-name = band["name"] + " / " + (band["cover"] || "").gsub(/\n/, "<br>")
+    h2 = "TIMETABLE"
+    table.landing-container
+      tbody
+        - data.y2016.bands.each do |band|
+          tr
+            td.description
+              a href="##{band["id"]}"
+                div = band["name"]
+                div = "（" + (band["cover"] || "").gsub(/\n/, "<br>") + "）"
+            td.time = band["start"].to_s + "〜" + band["end"].to_s
+
+  - data.y2016.bands.each do |band|
+    section.band.section id="section-#{band["id"]}"
+      div.band-container
+        h1.band-name = band["name"]
+        div.description = (band["description"] || "").gsub(/\n/, "<br>")
+        ul.members
+          - part_max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?
+          - name_max_length = length(band["members"].max_by { |m| length(m[1]) }[1]) unless band["members"].empty?
+          - band["members"].each do |member|
+            li.member
+              span.part = member[0].ljust(part_max_length + 1)
+              span.name = member[1].ljust(name_max_length).gsub(/\s/, "&nbsp;")
 
   div.info.section#section-about
     h2 About Union Fes
@@ -43,11 +62,10 @@ div.container#container
         li = link_to "Union Fes '13", "/2013", target: "_blank"
         li = link_to "Union Fes '14", "/2014", target: "_blank"
         li = link_to "Union Fes '15", "/2015", target: "_blank"
- 
 
 = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
 /= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
       async: "async", defer: "defer"
 = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.js"
-= javascript_include_tag "2015/main", async: "async", defer: "defer"
+= javascript_include_tag "2016/main", async: "async", defer: "defer"
 
