@@ -15,6 +15,20 @@ h2{
 a{
 	color: #666666;
 }
+a.twitter{
+	display: inline-block;
+	background: white;
+	@include radius(3px);
+	padding: 10px;
+	color: #4099ff;
+	text-shadow: none;
+	margin-left: 10px;
+}
+a.twitter:hover{
+	background: #dddddd;
+	color: #333333;
+}
+
 ul{
 	list-style-type: none;
 	padding-left: 0;
