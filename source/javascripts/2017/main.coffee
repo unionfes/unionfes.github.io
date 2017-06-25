@@ -11,6 +11,9 @@ $(document).ready ->
     "band8"
     "band9"
     "about"
+    "access"
+    "price"
+    "tshirt"
   ]
   $("#container").fullpage({
     anchors: anchors,
