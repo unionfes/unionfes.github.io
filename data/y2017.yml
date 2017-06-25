@@ -1,17 +1,27 @@
 bands:
   - id: band1
-    name: ZAKION YO-ICHI MAHOTK
+    name: LADY METAL
     description: |-
-      ヒット曲からマニアックな曲まで。
-      今回は‘‘僕等なりのBEST HIT AKG’’！
+      “メタルレジスタンス” の勢いは止まらない。
+
+
+
+      COVER：BABYMETAL
+      <iframe width="320" src="https://www.youtube.com/embed/qVdBBOpSoN4" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Gt./Vo.", "尾崎僚"]
       - ["Gt./Vo.", "村本耀一"]
       - ["Ba./Cho.", "八塚真帆"]
       - ["Dr.", "高橋一貴"]
   - id: band2
-    name: WonE (Wonder Erection)
-    description: ハードコアはじめました。
+    name: 真夏のサイダー
+    description: |-
+      現役爽やかバンド
+
+
+
+      COVER：Base Ball Bear
+      <iframe width="320" src="https://www.youtube.com/embed/PEikiz8r2wk" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Vo.", "箕ディック"]
       - ["Gt.", "橋ディック"]
@@ -19,18 +29,26 @@ bands:
       - ["Ba.VI", "谷ディック"]
       - ["Dr.", "正ディック"]
   - id: band3
-    name: 死んだ木
-    description: グランジ的精神
+    name: スリッパポット
+    description: |-
+
+
+
+      COVER：slipknot
+      <iframe width="320" src="https://www.youtube.com/embed/5abamRO41fE" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Gt./Vo.", "井上雄人"]
       - ["Ba./Cho.", "橋本歩"]
       - ["Dr.", "村田陵"]
   - id: band4
-    name: ナマステ
+    name: KIMASHI TOWER
     description: |-
-      ポルノグラフィティのコピーバンドです。
-      全員「理解している」メンバーで組んだのでとてもマニアックな曲を選曲できました。
-      よろしくお願いいたします。
+      傷年傷女の皆様へ
+
+
+
+      COVER:LACCO TOWER
+      <iframe width="320" src="https://www.youtube.com/embed/JR8hfg3ALoA" frameborder="0" allowfullscreen></iframe>
     members:
       - ["ボーカル・ギター", "林亮太"]
       - ["ギター", "中沢彰吾"]
@@ -38,10 +56,14 @@ bands:
       - ["ドラム", "横田亜蘭"]
       - ["キーボード・サンプラー", "佐藤周平"]
   - id: band5
-    name: All Need Guilty Lyrics
+    name: B!SH
     description: |-
-      This is Hardcore & Scream
-      Cover of Foreground Eclipse
+      遊ぼう
+
+
+
+      COVER:BiSH
+      <iframe width="320" src="https://www.youtube.com/embed/8y-dHKkp2zU" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Vocal", "ARA"]
       - ["Scream", "OMDX"]
@@ -51,36 +73,41 @@ bands:
       - ["Keyboard", "Arice"]
       - ["Drums", "Masa"]
   - id: band6
-    name: hogehoge
+    name: STRiP
     description: |-
-      2014年2月より活動しているフーバーオーバーのコピーバンド。
-      予習してこないと元腹パン副代表の右ストレートで火星まで飛ばされるとの噂。
+      COVER:FLiP
+      <iframe width="320" src="https://www.youtube.com/embed/1QdlMBtJWsE" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Vo./Gt.", "塩原"]
       - ["Gt.", "藤浦"]
       - ["Ba.", "清野"]
       - ["Dr.", "TK"]
   - id: band7
-    name: キミに熱中症
+    name: 如月メトローム
     description: |-
-      Base Ball Bearのコピーバンド。
-      檸檬をかじるような青春の爽やかなロックをお届けします。
+      夢の続きを見ていたいから、今この手で音を奏でましょう
     members:
       - ["Vo./Gt.", "林亮太(はやし)"]
       - ["Gt.", "山崎祐(やまさき)"]
       - ["Ba./Cho.", "志村友梨(しむしむ)"]
       - ["Dr.", "横田亜蘭(アラン)"]
   - id: band8
-    name: 数の子少女
-    description: ナンバーガールのコピーです！
+    name: 猿の社会人
+    description: |-
+      心で歌うな喉で歌え
+
+
+
+      COVER:ハヌマーン
+      <iframe width="320" src="https://www.youtube.com/embed/uFsVw95SutU" frameborder="0" allowfullscreen></iframe>
     members:
       - ["Vo./Gt.", "たま"]
       - ["Gt.", "たな"]
       - ["Ba.", "かわ"]
       - ["Dr.", "やじまさん"]
   - id: band9
-    name: THE TEKERE
-    description: "The METAL"
+    name: 鷹の爪
+    description: word:mizuki music:taka no tsume
     members:
       - ["Vo.",  "TENCHO"]
       - ["Vo.",  "MUTEKI"]

@@ -11,6 +11,8 @@ body {
   font-family: 'Noto Sans Japanese', sans-serif;
 }
 
+
+
 a.external::after {
   vertical-align: middle;
   content: url(/images/2017/external_link.png);
@@ -85,7 +87,7 @@ div#title-section {
     }
 
     img {
-      max-width: 400px;
+      max-width: 80%;
     }
   }
 
@@ -153,7 +155,7 @@ div#band1-section {
 
   .band-container {
     .band-name {
-      font-family: 'Passion One', cursive;
+      font-family: 'IM Fell Great Primer SC', serif;
     }
   }
 }
@@ -161,7 +163,7 @@ div#band1-section {
 div#band2-section {
   @include background('band-2.png');
   background-position: top center;
-  color: #555;
+  color: #FFF;
 
   .band-container {
     .band-name {
@@ -172,20 +174,21 @@ div#band2-section {
 
 div#band3-section {
   @include background('band-3.png');
-  color: #daa520;
+  .band-name{
+    display:none;
+  }
+  .description{
+    text-align: right;
+  }
 }
 
-@font-face {
-  font-family: riit;
-  src: url('RiiT_F.otf');
-}
 div#band4-section {
   @include background('band-4.png');
   //text-shadow: 0 -1px 10px #ddd, 1px 0 10px #ddd, 0 1px 10px #ddd, -1px 0 10px #ddd;
 
   .band-container {
     .band-name {
-      font-family: riit;
+      font-family: 'IM Fell Great Primer SC', serif;
     }
   }
 }
@@ -208,23 +211,23 @@ div#band6-section {
   background-position: top center;
 
   .band-container {
-    .band-name {
-      font-family: 'Chewy', cursive;
+    top:20%;
+    .band-name{
+      display:none;
+    }
+    .description{
+      text-align: right;
     }
   }
 }
 
-@font-face {
-  font-family: mitimasu;
-  src: url('mitimasu.ttf');
-}
 
 div#band7-section {
   @include background('band-7.png');
 
   .band-container {
     .band-name {
-      font-family: mitimasu;
+      display:none;
     }
   }
 }
@@ -235,6 +238,14 @@ div#band8-section {
 
 div#band9-section {
   @include background('band-9.png');
+  .band-container {
+    .band-name{
+      text-align: right;
+    }
+    .description{
+      text-align: right;
+    }
+  }
 }
 
 div.info {
@@ -271,18 +282,26 @@ div.info {
 }
 
 div#about-section {
+  @include background('title.png');
+
   div.content {
     text-align: left;
   }
 }
 
 div#access-section {
+  @include background('title.png');
+
 }
 
 div#price-section {
+  @include background('title.png');
+
 }
 
 div#tshirt-section {
+  @include background('title.png');
+
   div.content {
     img {
       width: 40%;
