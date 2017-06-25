@@ -1,6 +1,7 @@
 @mixin background($file) {
   background: {
     image: url('../../images/2017/' + $file);
+
     position: center center;
     repeat: no-repeat;
     size: cover;
@@ -13,4 +14,17 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+
+@mixin Uniwerek{
+  font-family: Uniwerek;
+  font-weight: 100;
+}
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
 }
