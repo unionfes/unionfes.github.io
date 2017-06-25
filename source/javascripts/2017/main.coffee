@@ -1,7 +1,6 @@
 $(document).ready ->
   anchors = [
     "title"
-    "landing"
     "band1"
     "band2"
     "band3"

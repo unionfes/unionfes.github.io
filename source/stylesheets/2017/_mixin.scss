@@ -1,6 +1,7 @@
 @mixin background($file) {
   background: {
-    image: url('../../images/2016/' + $file);
+    image: url('../../images/2017/' + $file);
+
     position: center center;
     repeat: no-repeat;
     size: cover;
@@ -14,6 +15,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 
 @mixin Uniwerek{
   font-family: Uniwerek;

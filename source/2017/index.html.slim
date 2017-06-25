@@ -1,4 +1,5 @@
 ---
+
 title: "TOJO K-ON Union Fes '17"
 image: "http://unionfes.tojok-on.com/images/2017/og-image.png"
 stylesheets:
@@ -12,23 +13,90 @@ stylesheets:
   - "//fonts.googleapis.com/css?family=Chewy"
   - "//fonts.googleapis.com/css?family=Shadows+Into+Light"
   - "//fonts.googleapis.com/css?family=Tangerine:400,700"
-  - "//fonts.googleapis.com/css?family=Gloria+Hallelujah"
+  - "//fonts.googleapis.com/css?family=Catamaran:900|IM+Fell+Great+Primer+SC"
   - "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css"
-  - "2017/font.css"
+  - "//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
   - "2017/main.css"
 ---
 
+div.container#container
+  div.section.active#title-section
+    h1 = image_tag "2017/title.svg", alt: "Union Fes 2017 May 4, 2017 at KURAWOOD"
+    / p.info Open 14:30 / Start 15:00
+    / p.info Uchiage 20:00 / End 22:00
 
-div.cover
-  div.info
-    div Union FES 2017
-    div 2017/07/16
-    div comming soon...
-div.container
-    ul.bands
-      - data.y2017.bands.each do |band|
-        li.band class="#{band["id"]}"
-          a href="#" #{band["cover"]}
+  - data.y2017.bands.each do |band|
+    div.band.section id="#{band["id"]}-section"
+      div.band-container
+        h2.band-name = band["name"]
+        div.description = (band["description"] || "").gsub(/\n/, "<br>")
+
+  div.info.section#about-section
+    h2 About Union Fes
+    div.content
+      p
+        | 筑波大学の軽音サークルTOJO K-ONの過去・現在・未来に関わる全ての人々が世代を超えて全力で楽しむライブイベントです。
+      p
+        | 今年は2017年7月16日に飯田橋spacewithというライブハウスで開催します。
+      p
+        | 過去のサイトで今までのUnion Fesの様子を見ることができるので、是非チェックしてみてください！
+    ul.pasts
+      li = link_to "Union Fes '12", "/2012", target: "_blank"
+      li = link_to "Union Fes '13", "/2013", target: "_blank"
+      li = link_to "Union Fes '14", "/2014", target: "_blank"
+      li = link_to "Union Fes '15", "/2015", target: "_blank"
+      li = link_to "Union Fes '16", "/2016", target: "_blank"
+
+  div.info.section#access-section
+    h2 Access to 飯田橋spacewith
+    div.map
+      iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1034836885196!2d139.7465653152592!3d35.69907098019017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c41bd275e77%3A0x59f1b657f74c906a!2z6aOv55Sw5qmL44K544Oa44O844K544Km44Kj44K6!5e0!3m2!1sja!2sjp!4v1498379576809" width="600" height="450"
+    div.content
+      p 都営大江戸線 飯田橋駅 から徒歩15分
+      p 東京都千代田区飯田橋1-7-3 増田金属ビルB1F
+      p
+        a.external href="http://www.spacewith.com/" target="_blank" http://www.spacewith.com/
+
+  div.info.section#price-section
+    h2 Price
+    div.content
+      p 学生: 入場料600円 打上げ2000円
+      p 社会人: 入場料1000円 打上げ3500円
+      p ※1ドリンク込み
+      p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
+
+  div.info.section#tshirt-section
+    h2 T-shirt
+    div.content
+      a href="https://www.ttrinity.jp/product/2929726#1"
+        = image_tag "2017/tshirt-front.png"
+      a href="http://www.ttrinity.jp/shop/kmdr/"
+        = image_tag "2017/tshirt-back.png"
+      p Union Fes '17 特製Tシャツ販売開始！！
+      p 文字のみ・文字＋写真　どちらも2500円
+      p
+        a.external href="http://www.ttrinity.jp/shop/kmdr/" SHOP:衣装部
+
+ul#menu
+  li.active data-menuanchor="title"
+    a href="#title" Top
+  li data-menuanchor="band1"
+    a href="#band1" Band
+  li data-menuanchor="about"
+    a href="#about" About
+  li data-menuanchor="access"
+    a href="#access" Access
+  li data-menuanchor="price"
+    a href="#price" Price
+  li data-menuanchor="tshirt"
+    a href="#tshirt" T-shirt
+
+  br
+
+  div#bands-menu
+    - data.y2017.bands.each do |band|
+      li.band data-menuanchor="#{band["id"]}"
+        a href="##{band["id"]}" = band["name"]
 
 
 = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"

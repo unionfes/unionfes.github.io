@@ -1,90 +1,311 @@
+/*
+ *= require 2015/responsive_small
+ *= require 2015/responsive_large
+ */
+
 @import 'mixin';
-html, body, .container, .bands{
-	height:100%;
-	margin:0;
-	padding:0;
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
-body{
-	position:relative;
+
+
+
+a.external::after {
+  vertical-align: middle;
+  content: url(/images/2017/external_link.png);
+  margin-left: 5px;
 }
-.cover{
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	z-index: 100;
-	display: flex;
-	justify-content:center;
-	align-items:center;
-	.info{
-		text-align: center;
-		width: 100%;
-		font-family: 'Gloria Hallelujah', cursive;
-		div{
-			color:white;
-			font-size:3em;
-			margin:0 auto;
-		}
-	}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  margin-left: 5px;
+  padding: 0;
+  font: {
+    size: 0.8rem;
+    family: Ubuntu;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px;
+
+    a {
+      height: 1rem;
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  li.active {
+    a {
+      background: rgba(255, 255, 255, 0.4);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+div.section {
+  width: 100%;
+
+  ul.pasts{
+    padding: 0;
+  }
+}
+ 
+div#title-section {
+  @include background('title.png');
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font: {
+      family: Ubuntu;
+      weight: 700;
+    }
+
+    img {
+      max-width: 80%;
+    }
+  }
+
+  p.date-and-place {
+    width: 100%;
+    text-align: center;
+    font: {
+      family: Ubuntu;
+      weight: 400;
+    }
+  }
+
+  p.info {
+    width: 100%;
+    margin: 10px;
+    text-align:center;
+    font: {
+      family: Ubuntu;
+      weight: 400;
+      size: 1.8em;
+    }
+  }
+}
+
+div.band {
+  width: 100%;
+
+  div.fp-tableCell {
+    vertical-align: top;
+  }
+}
+
+//div#band9-section {
+div.band {
+  text-shadow: 0 -1px 10px #000, 1px 0 10px #000, 0 1px 10px #000, -1px 0 10px #000;
+
+  div.band-container {
+    h2.band-name {
+      padding: 0;
+
+      font: {
+        family: Hind;
+        weight: 700;
+      }
+    }
+
+    div.description {
+      padding: 0;
+      font: {
+        family: Ubuntu;
+        weight: 400;
+      }
+    }
+
+    div.members {
+      font: {
+        family: 'Ubuntu Mono', 'Droid Sans Mono';
+      }
+    }
+  }
+}
+
+div#band1-section {
+  @include background('band-1.png');
+
+  .band-container {
+    .band-name {
+      font-family: 'IM Fell Great Primer SC', serif;
+    }
+  }
+}
+
+div#band2-section {
+  @include background('band-2.png');
+  background-position: top center;
+  color: #FFF;
+
+  .band-container {
+    .band-name {
+      font-family: 'Shadows Into Light', cursive;
+    }
+  } 
+}
+
+div#band3-section {
+  @include background('band-3.png');
+  .band-name{
+    display:none;
+  }
+  .description{
+    text-align: right;
+  }
+}
+
+div#band4-section {
+  @include background('band-4.png');
+  //text-shadow: 0 -1px 10px #ddd, 1px 0 10px #ddd, 0 1px 10px #ddd, -1px 0 10px #ddd;
+
+  .band-container {
+    .band-name {
+      font-family: 'IM Fell Great Primer SC', serif;
+    }
+  }
+}
+
+div#band5-section {
+  @include background('band-5.png');
+
+  .band-container {
+    .band-name {
+      font: {
+        family: 'Tangerine', cursive;
+        weight: 700;
+      }
+    }
+  }
+}
+
+div#band6-section {
+  @include background('band-6.png');
+  background-position: top center;
+
+  .band-container {
+    top:20%;
+    .band-name{
+      display:none;
+    }
+    .description{
+      text-align: right;
+    }
+  }
+}
+
+
+div#band7-section {
+  @include background('band-7.png');
+
+  .band-container {
+    .band-name {
+      display:none;
+    }
+  }
+}
+
+div#band8-section {
+  @include background('band-8.png');
+}
+
+div#band9-section {
+  @include background('band-9.png');
+  .band-container {
+    .band-name{
+      text-align: right;
+    }
+    .description{
+      text-align: right;
+    }
+  }
+}
+
+div.info {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin-bottom: -10px;
+    font: {
+      family: Hind;
+      weight: 700;
+    }
+  }
+
+  a {
+    color: #9cf;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  div.content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul.pasts {
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+div#about-section {
+  @include background('title.png');
+
+  div.content {
+    text-align: left;
+  }
+}
+
+div#access-section {
+  @include background('title.png');
 
 }
-.container{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	ul.bands{
-		display: flex;
-		flex-wrap:wrap;
-		align-content:stretch;
-		list-style-type: none;
-		.band{
-			width: 33.333%;
-			height:33.333%;
-			font-size:6em;
-			font-weight:bold;
-			a{
-				display:inline-block;
-				width: 100%;
-				height: 100%;
-				text-decoration:none;
-			}
-		}
-		.band1{
-			background:#37333C;
-			a{color:#FF5061;}
-		}
-		.band2{
-			background:#FF8E61;
-			a{color:#4E8E61;}
-		}
-		.band3{
-			background:#E1E5E4;
-			a{color:#42423D;}
-		}
-		.band4{
-			background:#FF4C46;
-			a{color:#FFECA9;}
-		}
-		.band5{
-			background:#FF8CA9;
-			a{color:#FFD7A9;}
-		}
-		.band6{
-			background:#61D7A9;
-			a{color:#F5F3E0;}
-		}
-		.band7{
-			background:#F58C6B;
-			a{color:#F5FFF8;}
-		}
-		.band8{
-			background:#6384F8;
-			a{color:#F4E3F8;}
-		}
-		.band9{
-			background:#605660;
-			a{color:#60FA60;}
-		}
 
-	}
+div#price-section {
+  @include background('title.png');
+
+}
+
+div#tshirt-section {
+  @include background('title.png');
+
+  div.content {
+    img {
+      width: 40%;
+    }
+  }
+
 }
