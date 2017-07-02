@@ -195,6 +195,7 @@ div#band4-section {
 
   .band-container {
     .band-name {
+      color: #fff;
       font-family: 'IM Fell Great Primer SC', serif;
     }
   }
@@ -298,6 +299,9 @@ div#about-section {
 
 div#access-section {
   @include background('title.png');
+  .map{
+    margin: 0 auto;
+  }
 
 }
 
@@ -310,8 +314,9 @@ div#tshirt-section {
   @include background('title.png');
 
   div.content {
+    width: 80%;
     img {
-      width: 40%;
+      width: 25%;
     }
   }
 
