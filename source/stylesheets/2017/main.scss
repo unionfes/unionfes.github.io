@@ -234,9 +234,11 @@ div#band7-section {
   @include background('band-7.png');
 
   .band-container {
+    padding-top: 70%;
     .band-name {
       display:none;
     }
+
   }
 }
 
