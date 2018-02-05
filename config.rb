@@ -45,12 +45,6 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.remote = "deploy"
-  deploy.branch = "master"
-end
-
 activate :livereload
 activate :sprockets
 
