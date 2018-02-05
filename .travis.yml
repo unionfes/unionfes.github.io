@@ -1,0 +1,12 @@
+language: ruby
+
+git:
+  depth: 1
+
+script:
+  - bundle exec middleman build
+  - "./deploy"
+
+notifications:
+  slack:
+    secure: ARDhUjrZYhmMXGM++6vl+7SwIliWqSqV82ZseHF4h6OBqB9EybKhkQn37zjElLfIp3tLHJHSaoaL/pBfukvaoDsr3ROFAz9K9EXDktkhzjQlstzbVMeMi7jIr6hie2cmVCY4LL1/vjp94/sPwQ8QTOTOX1r20UPU4XJEK54poTk=
