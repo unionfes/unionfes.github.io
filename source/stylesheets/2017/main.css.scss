@@ -1,9 +1,9 @@
 /*
- *= require 2015/responsive_small
- *= require 2015/responsive_large
+ *= require 2017/responsive_small
+ *= require 2017/responsive_large
  */
 
-@import 'mixin';
+@import '2017/_mixin.css.scss';
 
 body {
   background-color: #000;
@@ -11,9 +11,18 @@ body {
   font-family: 'Noto Sans Japanese', sans-serif;
 }
 
+.band-container {
+  .description{
+    iframe{
+      max-width:320px;
+      width: 100%;
+    }
+  }
+}
+
 a.external::after {
   vertical-align: middle;
-  content: url(/images/2015/external_link.png);
+  content: url(/images/2017/external_link.png);
   margin-left: 5px;
 }
 
@@ -69,9 +78,9 @@ div.section {
     padding: 0;
   }
 }
- 
+
 div#title-section {
-  @include background('title-section.jpg');
+  @include background('title.png');
   width: 100%;
 
   h1 {
@@ -85,7 +94,7 @@ div#title-section {
     }
 
     img {
-      max-width: 400px;
+      max-width: 80%;
     }
   }
 
@@ -149,49 +158,51 @@ div.band {
 }
 
 div#band1-section {
-  @include background('zakion-bg.jpg');
+  @include background('band-1.png');
 
   .band-container {
     .band-name {
-      font-family: 'Passion One', cursive;
+      font-family: 'IM Fell Great Primer SC', serif;
     }
   }
 }
 
 div#band2-section {
-  @include background('wone-bg.jpg');
+  @include background('band-2.png');
   background-position: top center;
-  color: #555;
+  color: #FFF;
 
   .band-container {
     .band-name {
       font-family: 'Shadows Into Light', cursive;
     }
-  } 
+  }
 }
 
 div#band3-section {
-  @include background('ki-bg.jpg');
-  color: #daa520;
+  @include background('band-3.png');
+  .band-name{
+    display:none;
+  }
+  .description{
+    text-align: right;
+  }
 }
 
-@font-face {
-  font-family: riit;
-  src: url('RiiT_F.otf');
-}
 div#band4-section {
-  @include background('namasute-bg.jpg');
+  @include background('band-4.png');
   //text-shadow: 0 -1px 10px #ddd, 1px 0 10px #ddd, 0 1px 10px #ddd, -1px 0 10px #ddd;
 
   .band-container {
     .band-name {
-      font-family: riit;
+      color: #fff;
+      font-family: 'IM Fell Great Primer SC', serif;
     }
   }
 }
 
 div#band5-section {
-  @include background('angl-bg.jpg');
+  @include background('band-5.png');
 
   .band-container {
     .band-name {
@@ -204,37 +215,47 @@ div#band5-section {
 }
 
 div#band6-section {
-  @include background('hogehoge-bg.jpg');
+  @include background('band-6.png');
   background-position: top center;
 
   .band-container {
-    .band-name {
-      font-family: 'Chewy', cursive;
+    top:20%;
+    .band-name{
+      display:none;
+    }
+    .description{
+      text-align: right;
     }
   }
 }
 
-@font-face {
-  font-family: mitimasu;
-  src: url('mitimasu.ttf');
-}
 
 div#band7-section {
-  @include background('kimi-bg.jpg');
+  @include background('band-7.png');
 
   .band-container {
+    padding-top: 70%;
     .band-name {
-      font-family: mitimasu;
+      display:none;
     }
+
   }
 }
 
 div#band8-section {
-  @include background('kazunoko-bg.jpg');
+  @include background('band-8.png');
 }
 
 div#band9-section {
-  @include background('tekere-bg.jpg');
+  @include background('band-9.png');
+  .band-container {
+    .band-name{
+      text-align: right;
+    }
+    .description{
+      text-align: right;
+    }
+  }
 }
 
 div.info {
@@ -271,21 +292,33 @@ div.info {
 }
 
 div#about-section {
+  @include background('title.png');
+
   div.content {
     text-align: left;
   }
 }
 
 div#access-section {
+  @include background('title.png');
+  .map{
+    margin: 0 auto;
+  }
+
 }
 
 div#price-section {
+  @include background('title.png');
+
 }
 
 div#tshirt-section {
+  @include background('title.png');
+
   div.content {
     img {
-      width: 40%;
+      width: 25%;
     }
   }
+
 }

@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.8"
-gem "middleman-livereload", "~> 3.1.0"
-gem "middleman-deploy"
+gem "middleman"
+
+gem "middleman-livereload"
+gem "middleman-deploy", "~> 2.0.0.pre.alpha"
+gem "middleman-sprockets", "~> 4.0.0.rc"
+
 gem "slim"
 
 gem "rake"
