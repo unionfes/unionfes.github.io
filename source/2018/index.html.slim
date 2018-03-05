@@ -1,6 +1,6 @@
 ---
 
-title: "TOJO K-ON Union Fes '17"
+title: "TOJO K-ON Union Fes '18"
 image: "http://unionfes.tojok-on.com/images/2017/og-image.png"
 stylesheets:
   - "//fonts.googleapis.com/css?family=Passion+One:400,700,900"
@@ -21,15 +21,15 @@ stylesheets:
 
 div.container#container
   div.section.active#title-section
-    /h1 = image_tag "2017/title.svg", alt: "Union Fes 2017 May 4, 2017 at KURAWOOD"
+    h1 = image_tag "2018/titlew.png", alt: "Union Fes 2018 Jul 7, 2018 at iidabashi spacewith"
     / p.info Open 14:30 / Start 15:00
     / p.info Uchiage 20:00 / End 22:00
 
-  - data.y2017.bands.each do |band|
-    div.band.section id="#{band["id"]}-section"
-      div.band-container
-        h2.band-name = band["name"]
-        div.description = (band["description"] || "").gsub(/\n/, "<br>")
+  /- data.y2017.bands.each do |band|
+   / div.band.section id="#{band["id"]}-section"
+   /   div.band-container
+   /     h2.band-name = band["name"]
+   /     div.description = (band["description"] || "").gsub(/\n/, "<br>")
 
   div.info.section#about-section
     h2 About Union Fes
@@ -61,10 +61,11 @@ div.container#container
   div.info.section#price-section
     h2 Price
     div.content
-      p 学生: 入場料600円 打上げ2000円
-      p 社会人: 入場料1000円 打上げ3500円
-      p ※1ドリンク込み
-      p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
+      p coming soon
+      /p 学生: 入場料600円 打上げ2000円
+      /p 社会人: 入場料1000円 打上げ3500円
+      /p ※1ドリンク込み
+      /p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
 
   /div.info.section#tshirt-section
     h2 T-shirt
@@ -98,7 +99,7 @@ ul#menu
 
   br
 
-  div#bands-menu
+  /div#bands-menu
     - data.y2017.bands.each do |band|
       li.band data-menuanchor="#{band["id"]}"
         a href="##{band["id"]}" = band["name"]
