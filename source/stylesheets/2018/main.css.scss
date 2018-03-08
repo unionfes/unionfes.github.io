@@ -8,7 +8,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .band-container {
@@ -82,6 +82,7 @@ div.section {
 div#title-section {
   @include background('moon.png');
   width: 100%;
+  text-align: center;
 
   h1 {
     margin: 0;
@@ -265,8 +266,8 @@ div.info {
   h2 {
     margin-bottom: -10px;
     font: {
-      family: Hind;
-      weight: 700;
+      family: Dosis;
+      weight: 300;
     }
   }
 
