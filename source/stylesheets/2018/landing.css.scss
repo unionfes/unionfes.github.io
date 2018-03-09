@@ -1,0 +1,47 @@
+/*
+ *= require 2015/_responsive
+ */
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+a.external::before {
+  content: url(/images/2015/landing/icn_link.png);
+  margin-right: 10px;
+}
+
+#title {
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.section-header {
+}
+
+.section-body {
+  .sub-header {
+    font: {
+      size: 5rem;
+    }
+  }
+  .section-content {
+    font: {
+      size: 1.5em;
+    }
+    iframe {
+      width: 100%;
+      min-height: 300px;
+      border: 0;
+    }
+  }
+}
