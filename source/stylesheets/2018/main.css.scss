@@ -1,13 +1,13 @@
 /*
- *= require 2017/responsive_small
- *= require 2017/responsive_large
+ *= require 2018/responsive_small
+ *= require 2018/responsive_large
  */
 
-@import '2017/_mixin.css.scss';
+@import '2018/_mixin.css.scss';
 
 body {
   background-color: #000;
-  color: #fff;
+  color: #000055;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
 
@@ -49,23 +49,23 @@ a.external::after {
       padding: 5px;
       text-decoration: none;
       text-align: center;
-      background: rgba(255, 255, 255, 0.2);
-      color: #fff;
+      background: rgba(0, 0, 85, 0.2);
+      color: #000055;
       -webkit-border-radius: 5px;
       border-radius: 5px;
 
       &:hover {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(0, 0, 85, 0.5);
       }
     }
   }
 
   li.active {
     a {
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(0, 0, 85, 0.4);
 
       &:hover {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(0, 0, 85, 0.7);
       }
     }
   }
@@ -80,7 +80,7 @@ div.section {
 }
 
 div#title-section {
-  @include background('moon.png');
+  @include background('back.png');
   width: 100%;
   text-align: center;
 
@@ -272,11 +272,11 @@ div.info {
   }
 
   a {
-    color: #9cf;
+    color: #006491;
     text-decoration: none;
 
     &:hover {
-      color: #fff;
+      color: #000055;
     }
   }
 
@@ -293,7 +293,7 @@ div.info {
 }
 
 div#about-section {
-  @include background('moon.png');
+  @include background('back.png');
 
   div.content {
     text-align: left;
@@ -301,7 +301,7 @@ div#about-section {
 }
 
 div#access-section {
-  @include background('moon.png');
+  @include background('back.png');
   .map{
     margin: 0 auto;
   }
@@ -309,12 +309,12 @@ div#access-section {
 }
 
 div#price-section {
-  @include background('moon.png');
+  @include background('back.png');
 
 }
 
 div#tshirt-section {
-  @include background('moon.png');
+  @include background('back.png');
 
   div.content {
     img {

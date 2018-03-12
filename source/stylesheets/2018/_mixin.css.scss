@@ -1,6 +1,6 @@
 @mixin background($file) {
   background: {
-    image: url('../../images/2017/' + $file);
+    image: url('../../images/2018/' + $file);
 
     position: center center;
     repeat: no-repeat;
