@@ -1,6 +1,7 @@
 $(document).ready ->
   anchors = [
     "title"
+	 "timetable"
     "band1"
     "band2"
     "band3"
@@ -9,11 +10,9 @@ $(document).ready ->
     "band6"
     "band7"
     "band8"
-    "band9"
     "about"
     "access"
     "price"
-    "tshirt"
   ]
   $("#container").fullpage({
     anchors: anchors,

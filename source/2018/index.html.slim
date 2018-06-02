@@ -27,7 +27,18 @@ div.container#container
     h1 = image_tag "2018/top.png", alt: "Union Fes 2018 Jul 7, 2018 at iidabashi spacewith Open 14:30 / Start 15:00"
     h2 = link_to image_tag('2018/twitter.png'), "https://twitter.com/tojokonunionfes"
     /p.info Open 14:30 / Start 15:00
-    / p.info Uchiage 20:00 / End 22:00
+    /p.info Uchiage 20:00 / End 22:00
+
+  div.info.section#timetable-section
+    h2 TimeTable
+    div.content
+      table
+        tbody
+        -data.y2018.bands.each do |band|
+         tr
+          td = band["time"]
+          td = "#{band["name"]}(#{band["cover"]})"
+          br
 
   - data.y2018.bands.each do |band|
     div.band.section id="#{band["id"]}-section"
@@ -65,11 +76,13 @@ div.container#container
   div.info.section#price-section
     h2 Price
     div.content
-      p coming soon
-      /p 学生: 入場料600円 打上げ2000円
-      /p 社会人: 入場料1000円 打上げ3500円
-      /p ※1ドリンク込み
-      /p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
+      /p coming soon
+      p 学生: 入場料600円
+      /打上げ2000円
+      p 社会人: 入場料1000円
+      /打上げ3500円
+      p ※1ドリンク込み
+      p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
 
   /div.info.section#tshirt-section
     h2 T-shirt
@@ -90,6 +103,8 @@ div.container#container
 ul#menu
   li.active data-menuanchor="title"
     a href="#title" Top
+  li data-menuanchor="timetable"
+    a href="#timetable" TimeTable
   li data-menuanchor="band1"
     a href="#band1" Band
   li data-menuanchor="about"

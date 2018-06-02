@@ -120,6 +120,16 @@ div#title-section {
   }
 }
 
+div#timetable-section {
+  @include background('back.png');
+  table{
+	  margin: 0 auto;
+	  td{
+		  text-align: right;
+	  }
+  }
+}
+
 div.band {
   width: 100%;
 
