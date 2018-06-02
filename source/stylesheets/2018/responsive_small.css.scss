@@ -13,6 +13,21 @@
   #menu {
     li.band { display: none; }
   }
+  div#timetable-section {
+    h2{
+  	   margin-top: 20%;
+    }
+    table{
+  	  margin: 0 auto;
+  	  position: absolute;
+  	  top: 50%;
+  	  left: 50%;
+  	  transform: translateY(-50%) translateX(-50%);
+  	  td{
+  		  text-align: right;
+  	  }
+    }
+  }
 
   div.band {
     div.band-container {
