@@ -1,0 +1,69 @@
+bands:
+  - id: band1
+    name: 週末少女旅行
+    description: |-
+    members:
+      - ["Gt./Vo.", "尾崎僚"]
+      - ["Gt./Vo.", "村本耀一"]
+      - ["Ba./Cho.", "八塚真帆"]
+      - ["Dr.", "高橋一貴"]
+  - id: band2
+    name: Mario
+    description: |-
+    members:
+      - ["Vo.", "箕ディック"]
+      - ["Gt.", "橋ディック"]
+      - ["Ba.", "大ディック"]
+      - ["Ba.VI", "谷ディック"]
+      - ["Dr.", "正ディック"]
+  - id: band3
+    name: マサアキさんフィスト
+    description: |-
+    members:
+      - ["Gt./Vo.", "井上雄人"]
+      - ["Ba./Cho.", "橋本歩"]
+      - ["Dr.", "村田陵"]
+  - id: band4
+    name: 竹書房ゥァア゛ーッ！！！
+    description: |-
+    members:
+      - ["ボーカル・ギター", "林亮太"]
+      - ["ギター", "中沢彰吾"]
+      - ["ベース", "八塚真帆"]
+      - ["ドラム", "横田亜蘭"]
+      - ["キーボード・サンプラー", "佐藤周平"]
+  - id: band5
+    name: barons 13
+    description: |-
+    members:
+      - ["Vocal", "ARA"]
+      - ["Scream", "OMDX"]
+      - ["Guitar", "No Enemy"]
+      - ["Guitar", "Fuzz Girl"]
+      - ["Bass", "Ayabe"]
+      - ["Keyboard", "Arice"]
+      - ["Drums", "Masa"]
+  - id: band6
+    name: あの夏のアローザ
+    description: |-
+    members:
+      - ["Vo./Gt.", "塩原"]
+      - ["Gt.", "藤浦"]
+      - ["Ba.", "清野"]
+      - ["Dr.", "TK"]
+  - id: band7
+    name: くらずしはうまいど
+    description: |-
+    members:
+      - ["Vo./Gt.", "林亮太(はやし)"]
+      - ["Gt.", "山崎祐(やまさき)"]
+      - ["Ba./Cho.", "志村友梨(しむしむ)"]
+      - ["Dr.", "横田亜蘭(アラン)"]
+  - id: band8
+    name: 7大アレルゲン
+    description: |-
+    members:
+      - ["Vo./Gt.", "たま"]
+      - ["Gt.", "たな"]
+      - ["Ba.", "かわ"]
+      - ["Dr.", "やじまさん"]
