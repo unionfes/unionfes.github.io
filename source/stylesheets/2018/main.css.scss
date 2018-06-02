@@ -167,9 +167,6 @@ div#band1-section {
 
 div#band2-section {
   @include background-b('band-2.jpg');
-  background-position: top center;
-  color: #FFF;
-
   .band-container {
     .band-name {
       font-family: 'Shadows Into Light', cursive;
@@ -214,8 +211,6 @@ div#band5-section {
 
 div#band6-section {
   @include background-b('band-6.jpg');
-  background-position: top center;
-
   .band-container {
     top:20%;
     .band-name{
