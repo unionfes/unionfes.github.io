@@ -122,15 +122,7 @@ div#title-section {
 
 div#timetable-section {
   @include background('back.png');
-  h2{
-	   margin-top: 0;
-  }
   table{
-	  margin: 0 auto;
-	  position: absolute;
-	  top: 65%;
-	  left: 50%;
-	  transform: translateY(-50%) translateX(-50%);
 	  td{
 		  text-align: right;
 	  }
