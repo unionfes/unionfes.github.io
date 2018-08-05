@@ -25,6 +25,26 @@
       font-size: 2rem;
     }
   }
+  div#timetable-section {
+	  h2{
+			//margin-top: 30;
+			margin: 0 auto;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+	  }
+    table{
+		  margin: 0 auto;
+		  position: absolute;
+		  top: 65%;
+		  left: 50%;
+		  transform: translateY(-50%) translateX(-50%);
+  	  td{
+  		  text-align: right;
+  	  }
+    }
+  }
 
   div.band {
     div.band-container {

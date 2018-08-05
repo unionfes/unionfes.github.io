@@ -1,0 +1,85 @@
+bands:
+  - id: band1
+    name: 少女終末旅行
+    time: 15:00-15:35
+    cover: SuiseiNoboAz
+    description: |-
+    members:
+      - ["Gt./Vo.", "尾崎僚"]
+      - ["Gt./Vo.", "村本耀一"]
+      - ["Ba./Cho.", "八塚真帆"]
+      - ["Dr.", "高橋一貴"]
+  - id: band2
+    name: Mario
+    time: 15:35-16:10
+    cover: Rufio
+    description: |-
+    members:
+      - ["Vo.", "箕ディック"]
+      - ["Gt.", "橋ディック"]
+      - ["Ba.", "大ディック"]
+      - ["Ba.VI", "谷ディック"]
+      - ["Dr.", "正ディック"]
+  - id: band3
+    name: マサアキさんフィスト
+    time: 16:10-16:45
+    cover: Dizzy Sunfist
+    description: |-
+    members:
+      - ["Gt./Vo.", "井上雄人"]
+      - ["Ba./Cho.", "橋本歩"]
+      - ["Dr.", "村田陵"]
+  - id: band4
+    name: 竹書房ゥァア゛ーッ！！！
+    time: 16:45-17:20
+    cover: フジファブリック
+    description: |-
+    members:
+      - ["ボーカル・ギター", "林亮太"]
+      - ["ギター", "中沢彰吾"]
+      - ["ベース", "八塚真帆"]
+      - ["ドラム", "横田亜蘭"]
+      - ["キーボード・サンプラー", "佐藤周平"]
+  - id: band5
+    name: barons 13
+    time: 17:20-17:55
+    cover: ELLE GARDEN他
+    description: |-
+    members:
+      - ["Vocal", "ARA"]
+      - ["Scream", "OMDX"]
+      - ["Guitar", "No Enemy"]
+      - ["Guitar", "Fuzz Girl"]
+      - ["Bass", "Ayabe"]
+      - ["Keyboard", "Arice"]
+      - ["Drums", "Masa"]
+  - id: band6
+    name: あの夏のアローザ
+    time: 17:55-18:30
+    cover: オリジナル
+    description: |-
+    members:
+      - ["Vo./Gt.", "塩原"]
+      - ["Gt.", "藤浦"]
+      - ["Ba.", "清野"]
+      - ["Dr.", "TK"]
+  - id: band7
+    name: くらずしはうまいど
+    time: 18:30-19:05
+    cover: Climb The Mind
+    description: |-
+    members:
+      - ["Vo./Gt.", "林亮太(はやし)"]
+      - ["Gt.", "山崎祐(やまさき)"]
+      - ["Ba./Cho.", "志村友梨(しむしむ)"]
+      - ["Dr.", "横田亜蘭(アラン)"]
+  - id: band8
+    name: 七大アレルゲン
+    time: 19:05-19:40
+    cover: アニソン
+    description: |-
+    members:
+      - ["Vo./Gt.", "たま"]
+      - ["Gt.", "たな"]
+      - ["Ba.", "かわ"]
+      - ["Dr.", "やじまさん"]

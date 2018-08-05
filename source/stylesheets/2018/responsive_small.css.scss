@@ -13,6 +13,15 @@
   #menu {
     li.band { display: none; }
   }
+  
+  div#timetable-section {
+    table{
+  	  margin: 0 auto;
+  	  td{
+  		  text-align: right;
+  	  }
+    }
+  }
 
   div.band {
     div.band-container {

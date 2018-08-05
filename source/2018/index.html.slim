@@ -24,16 +24,27 @@ stylesheets:
 
 div.container#container
   div.section.active#title-section
-    h1 = image_tag "2018/top.png", alt: "Union Fes 2018 Jul 7, 2018 at iidabashi spacewith"
+    h1 = image_tag "2018/top.png", alt: "Union Fes 2018 Jul 7, 2018 at iidabashi spacewith Open 14:30 / Start 15:00"
     h2 = link_to image_tag('2018/twitter.png'), "https://twitter.com/tojokonunionfes"
-    / p.info Open 14:30 / Start 15:00
-    / p.info Uchiage 20:00 / End 22:00
+    /p.info Open 14:30 / Start 15:00
+    /p.info Uchiage 20:00 / End 22:00
 
-  /- data.y2017.bands.each do |band|
-   / div.band.section id="#{band["id"]}-section"
-   /   div.band-container
-   /     h2.band-name = band["name"]
-   /     div.description = (band["description"] || "").gsub(/\n/, "<br>")
+  div.info.section#timetable-section
+    h2 TimeTable
+    div.content
+      table
+        tbody
+        -data.y2018.bands.each do |band|
+         tr
+          td = band["time"]
+          td = "#{band["name"]}(#{band["cover"]})"
+          
+
+  - data.y2018.bands.each do |band|
+    div.band.section id="#{band["id"]}-section"
+      div.band-container
+        /h2.band-name = band["name"]
+        /div.description = (band["description"] || "").gsub(/\n/, "<br>")
 
   div.info.section#about-section
     h2 About Union Fes
@@ -65,11 +76,13 @@ div.container#container
   div.info.section#price-section
     h2 Price
     div.content
-      p coming soon
-      /p 学生: 入場料600円 打上げ2000円
-      /p 社会人: 入場料1000円 打上げ3500円
-      /p ※1ドリンク込み
-      /p ※打ち上げに参加される場合は、twitterなどで事前にご連絡ください
+      /p coming soon
+      p 学生: 入場料600円
+      /打上げ2000円
+      p 社会人: 入場料1000円
+      /打上げ3500円
+      p ※1ドリンク込み
+      p ※打ち上げ(20:15-)に参加される場合は、twitterなどで事前にご連絡ください
 
   /div.info.section#tshirt-section
     h2 T-shirt
@@ -90,8 +103,10 @@ div.container#container
 ul#menu
   li.active data-menuanchor="title"
     a href="#title" Top
-  /li data-menuanchor="band1"
-    /a href="#band1" Band
+  li data-menuanchor="timetable"
+    a href="#timetable" TimeTable
+  li data-menuanchor="band1"
+    a href="#band1" Band
   li data-menuanchor="about"
     a href="#about" About
   li data-menuanchor="access"
@@ -103,8 +118,8 @@ ul#menu
 
   br
 
-  /div#bands-menu
-    - data.y2017.bands.each do |band|
+  div#bands-menu
+    - data.y2018.bands.each do |band|
       li.band data-menuanchor="#{band["id"]}"
         a href="##{band["id"]}" = band["name"]
 
@@ -113,4 +128,4 @@ ul#menu
 /= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", \
       async: "async", defer: "defer"
 = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.js"
-= javascript_include_tag "2017/main", async: "async", defer: "defer"
+= javascript_include_tag "2018/main", async: "async", defer: "defer"
