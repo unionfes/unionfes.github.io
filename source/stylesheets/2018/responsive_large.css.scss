@@ -1,0 +1,109 @@
+@import '2018/_mixin.css.scss';
+
+@media screen and (min-width: 1024px) {
+  #menu {
+    li { width: 100px; }
+
+    #bands-menu {
+      position: fixed;
+      bottom: 0;
+
+      li.band { width: auto; }
+    }
+  }
+
+  div#title-section {
+    h1 {
+      font-size: 5rem;
+    }
+
+    p.date-and-place {
+      font-size: 2rem;
+    }
+
+    p.info {
+      font-size: 2rem;
+    }
+  }
+
+  div.band {
+    div.band-container {
+      padding-top: 7rem;
+      h2.band-name {
+        margin: 0 0 2rem 1rem;
+        font-size: 9rem;
+      }
+
+      div.description {
+        margin: 0 0 0 2rem;
+        font-size: 2rem;
+      }
+
+      div.members {
+        margin: 1rem 0 0 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  div#band1-section {}
+
+  div#band2-section {
+    text-align: center;
+
+    .band-container {
+      @include vertical-middle;
+    }
+  }
+
+  div#band3-section {
+    .band-container {
+      position: absolute;
+      right: 5rem;
+    }
+  }
+
+  div#band4-section {
+    .band-container {
+      .band-name {
+        color: #000;
+        text-shadow: none;
+      }
+    }
+  }
+
+  div#band5-section {
+    .band-container {
+      .description {
+        position: absolute;
+        bottom: 20rem;
+      }
+
+      .members {
+        position: absolute;
+        bottom: 4rem;
+      }
+    }
+  }
+
+  div#band6-section {
+    .band-container {
+      @include vertical-middle;
+    }
+  }
+
+  div.info {
+    h2 { font-size: 5rem; }
+    div.content {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  div#access-section {
+    iframe {
+      width: 600px;
+      height: 400px;
+    }
+  }
+}
