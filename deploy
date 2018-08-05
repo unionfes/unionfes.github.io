@@ -1,7 +1,14 @@
 #!/bin/bash
 
+set -eu
+
+echo "Branch: ${TRAVIS_BRANCH}"
+
 [[ $TRAVIS_REPO_SLUG = "unionfes/unionfes.github.io" ]] || exit 0
-[[ $TRAVIS_BRANCH = "source" ]] || exit 0
+[[ $TRAVIS_BRANCH != "master" ]] && {
+  echo "Deployment is skipped"
+  exit 0
+}
 
 cd build
 
