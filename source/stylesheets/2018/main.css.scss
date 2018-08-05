@@ -49,23 +49,23 @@ a.external::after {
       padding: 5px;
       text-decoration: none;
       text-align: center;
-      background: rgba(0, 0, 85, 0.2);
+      background: rgba(255, 255, 255, 0.65);
       color: #000055;
       -webkit-border-radius: 5px;
       border-radius: 5px;
 
       &:hover {
-        background: rgba(0, 0, 85, 0.5);
+        background: rgba(255, 255, 255, 0.75);
       }
     }
   }
 
   li.active {
     a {
-      background: rgba(0, 0, 85, 0.4);
+      background: rgba(255, 255, 255, 0.85);
 
       &:hover {
-        background: rgba(0, 0, 85, 0.7);
+        background: rgba(255, 255, 255, 0.9);
       }
     }
   }
@@ -119,7 +119,7 @@ div#title-section {
     }
   }
 }
-/*
+
 div.band {
   width: 100%;
 
@@ -128,7 +128,7 @@ div.band {
   }
 }
 
-//div#band9-section {
+/*div#band9-section {
 div.band {
   text-shadow: 0 -1px 10px #000, 1px 0 10px #000, 0 1px 10px #000, -1px 0 10px #000;
 
@@ -156,23 +156,17 @@ div.band {
       }
     }
   }
-}
+}*/
 
 div#band1-section {
-  @include background('band-1.png');
+  @include background-b('band-1.png');
 
   .band-container {
-    .band-name {
-      font-family: 'IM Fell Great Primer SC', serif;
-    }
   }
 }
 
 div#band2-section {
-  @include background('band-2.png');
-  background-position: top center;
-  color: #FFF;
-
+  @include background-b('band-2.jpg');
   .band-container {
     .band-name {
       font-family: 'Shadows Into Light', cursive;
@@ -181,7 +175,7 @@ div#band2-section {
 }
 
 div#band3-section {
-  @include background('band-3.png');
+  @include background-b('band-3.jpg');
   .band-name{
     display:none;
   }
@@ -191,7 +185,7 @@ div#band3-section {
 }
 
 div#band4-section {
-  @include background('band-4.png');
+  @include background-b('band-4.jpg');
   //text-shadow: 0 -1px 10px #ddd, 1px 0 10px #ddd, 0 1px 10px #ddd, -1px 0 10px #ddd;
 
   .band-container {
@@ -203,7 +197,7 @@ div#band4-section {
 }
 
 div#band5-section {
-  @include background('band-5.png');
+  @include background-b('band-5.png');
 
   .band-container {
     .band-name {
@@ -216,9 +210,7 @@ div#band5-section {
 }
 
 div#band6-section {
-  @include background('band-6.png');
-  background-position: top center;
-
+  @include background-b('band-6.jpg');
   .band-container {
     top:20%;
     .band-name{
@@ -232,7 +224,7 @@ div#band6-section {
 
 
 div#band7-section {
-  @include background('band-7.png');
+  @include background-b('band-7.jpg');
 
   .band-container {
     padding-top: 70%;
@@ -244,9 +236,10 @@ div#band7-section {
 }
 
 div#band8-section {
-  @include background('band-8.png');
+  @include background-b('band-8.jpg');
 }
 
+/*
 div#band9-section {
   @include background('band-9.png');
   .band-container {
