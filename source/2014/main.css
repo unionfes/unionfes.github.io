@@ -1,9 +1,3 @@
-/*
- *= require 2014/bootstrap
- *= require 2014/bootstrap-responsive
- *
- */
-
 /*!
  * Copyright 2013 @no1aran.
  * Based on Design by @round_kmdr.
@@ -11,7 +5,7 @@
 
 body {
     background-color: #e35444;
-    background-image: url(/images/2014/g-body.png);
+    background-image: url(images/g-body.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     color: #553939;
@@ -84,7 +78,7 @@ textarea {
 
 .g-neck {
     background-color: #fbf6e0;
-    background-image: url(/images/2014/g-neck.jpg);
+    background-image: url(images/g-neck.jpg);
     background-position: center top;
     padding: 20px 20px 0 20px;
 }
@@ -184,19 +178,19 @@ table.members td {
 }
 
 .icon-vo {
-    background-image: url(/images/2014/icon-vo.png);
+    background-image: url(images/icon-vo.png);
 }
 .icon-gt {
-    background-image: url(/images/2014/icon-gt.png);
+    background-image: url(images/icon-gt.png);
 }
 .icon-ba {
-    background-image: url(/images/2014/icon-ba.png);
+    background-image: url(images/icon-ba.png);
 }
 .icon-dr {
-    background-image: url(/images/2014/icon-dr.png);
+    background-image: url(images/icon-dr.png);
 }
 .icon-key {
-    background-image: url(/images/2014/icon-key.png);
+    background-image: url(images/icon-key.png);
 }
 
 .joint {

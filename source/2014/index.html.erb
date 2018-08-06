@@ -11,7 +11,9 @@
     <meta name="copyright" content="Copyright (c) 2013 TOJO K-ON">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>TOJO K-ON Union Fes '14</title>
-    <%= stylesheet_link_tag "2014/main" %>
+    <%= stylesheet_link_tag "./bootstrap.min" %>
+    <%= stylesheet_link_tag "./bootstrap-responsive.min" %>
+    <%= stylesheet_link_tag "./main" %>
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -51,7 +53,7 @@
       <div class="g-neck">
 
         <h2>Info</h2>
-        <%= image_tag "2014/title_info.png", alt: "Info", class: "title", id: "info" %>
+        <%= image_tag "./images/title_info.png", alt: "Info", class: "title", id: "info" %>
         <div class="row-blk">
           <div class="left-blk">
             <h3>Date</h3>
@@ -74,7 +76,7 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>About</h2>
-        <%= image_tag "2014/title_about.png", alt: "About", class: "title", id: "about" %>
+        <%= image_tag "./images/title_about.png", alt: "About", class: "title", id: "about" %>
         <p>TOJO K-ON Union Fesは、筑波大学のバンドサークルTOJO K-ONにまつわる全ての人たちが、世代を超えて共演するライブイベントです。第1回は2011年5月4日に開催されました。今年もゴールデンウィーク真っ只中、5/4（日）に開催されます！みどりの日！！</p>
         <p><a href="2013">TOJO K-ON Union Fes '13 ウェブサイト</a></p>
         <p>出演はTOJO K-ONの関係者なら誰でも、現役でも卒業生でも学生でも社会人でも（無職でも）（光が見えなくても）参加できます。もちろん、観覧はどなたでも大歓迎。どしどしご参加ください！！</p>
@@ -82,11 +84,11 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>Band</h2>
-        <%= image_tag "2014/title_band.png", alt: "Band", class: "title", id: "band" %>
+        <%= image_tag "./images/title_band.png", alt: "Band", class: "title", id: "band" %>
 
         <div id="band_group">
           <div class="band">
-            <%= image_tag "2014/band/1.jpg", alt: "三人娘" %>
+            <%= image_tag "./images/band/1.jpg", alt: "三人娘" %>
             <div class="desc">
               <p><span class="order">01</span><span class="bname">三人娘</span></p>
               <p class="time">16:00 - 16:35</p>
@@ -108,7 +110,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/2.jpg", alt: "三人♂" %>
+            <%= image_tag "./images/band/2.jpg", alt: "三人♂" %>
             <div class="desc">
               <p><span class="order">02</span><span class="bname">三人♂</span></p>
               <p class="time">16:35 - 17:10</p>
@@ -130,7 +132,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/3.jpg", alt: "完全体" %>
+            <%= image_tag "./images/band/3.jpg", alt: "完全体" %>
             <div class="desc">
               <p><span class="order">03</span><span class="bname">完全体</span></p>
               <p class="time">17:10 - 17:45</p>
@@ -159,7 +161,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/4.jpg", alt: "未定" %>
+            <%= image_tag "./images/band/4.jpg", alt: "未定" %>
             <div class="desc">
               <p><span class="order">04</span><span class="bname">Cellar Door</span></p>
               <p class="time">17:45 - 18:20</p>
@@ -181,7 +183,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/5.jpg", alt: "空中城塞ゴリョウカク" %>
+            <%= image_tag "./images/band/5.jpg", alt: "空中城塞ゴリョウカク" %>
             <div class="desc">
               <p><span class="order">05</span><span class="bname">空中城塞ゴリョウカク</span></p>
               <p class="time">18:20 - 18:55</p>
@@ -210,7 +212,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/6.jpg", alt: "ニューキャシーメガネ" %>
+            <%= image_tag "./images/band/6.jpg", alt: "ニューキャシーメガネ" %>
             <div class="desc">
               <p><span class="order">06</span><span class="bname">ニューキャシーメガネ</span></p>
               <p class="time">18:55 - 19:30</p>
@@ -239,7 +241,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/7.jpg", alt: "B○S" %>
+            <%= image_tag "./images/band/7.jpg", alt: "B○S" %>
             <div class="desc">
               <p><span class="order">07</span><span class="bname">B○S</span></p>
               <p class="time">19:30 - 20:05</p>
@@ -267,7 +269,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2014/band/8.jpg", alt: "モツニコミ・ヤキニク・サラダ・キムチ" %>
+            <%= image_tag "./images/band/8.jpg", alt: "モツニコミ・ヤキニク・サラダ・キムチ" %>
             <div class="desc">
               <p><span class="order">08</span><span class="bname">モツニコミ・ヤキニク・サラダ・キムチ</span></p>
               <p class="time">20:05 - 20:40</p>
@@ -294,13 +296,13 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>Contact</h2>
-        <%= image_tag "2014/title_contact.png", alt: "Contact", class: "title", id: "contact" %>
+        <%= image_tag "./images/title_contact.png", alt: "Contact", class: "title", id: "contact" %>
         <p>ご質問・ご意見などは、以下のフォームからご連絡ください。<br>
           <!-- <strong>*</strong> は必須項目です。</p> -->
 
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
-        <%= image_tag "2014/joint.png", alt: "joing", width: "", height: "", class: "joint" %>
+        <%= image_tag "./images/joint.png", alt: "joing", width: "", height: "", class: "joint" %>
 
       </div>
       <!--End Guitar Neck-->
