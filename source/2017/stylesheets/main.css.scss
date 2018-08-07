@@ -1,9 +1,4 @@
-/*
- *= require 2017/responsive_small
- *= require 2017/responsive_large
- */
-
-@import '2017/_mixin.css.scss';
+@import '_mixin.css.scss';
 
 body {
   background-color: #000;
@@ -22,7 +17,7 @@ body {
 
 a.external::after {
   vertical-align: middle;
-  content: url(/images/2017/external_link.png);
+  content: url(../images/external_link.png);
   margin-left: 5px;
 }
 
