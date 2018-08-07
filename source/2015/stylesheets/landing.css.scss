@@ -1,14 +1,10 @@
-/*
- *= require 2015/_responsive
- */
-
 body {
   background-color: #000;
   color: #fff;
 }
 
 a.external::before {
-  content: url(/images/2015/landing/icn_link.png);
+  content: url(../images/landing/icn_link.png);
   margin-right: 10px;
 }
 
