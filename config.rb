@@ -32,12 +32,5 @@ end
 activate :livereload
 activate :sprockets
 
+set :layout, false
 set :relative_links, true
-
-page "2012/*", layout: false
-page "2013/*", layout: false
-page "2014/*", layout: false
-page "2015/*", layout: false
-page "2016/*", layout: false
-page "2017/*", layout: false
-page "2018/*", layout: false
