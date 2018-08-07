@@ -1,5 +1,8 @@
 require "lib/display_length"
+require "lib/helpers"
+
 helpers DisplayLength
+helpers Helpers
 
 module StringExt
   def ljust(size, padstr = ' ')
