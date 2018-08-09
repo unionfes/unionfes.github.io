@@ -9,5 +9,5 @@ html
     p Redirect '#{latest.to_s[-2..-1]} in 10 seconds.
 
     ul
-      - years.tap {|u| p u}.each do |year|
+      - years.each do |year|
         li= link_to "Union Fes '#{year.to_s[-2..-1]}", "/#{year}"
