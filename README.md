@@ -4,6 +4,10 @@ Union Fes Web Site
 TOJO K-ON Union Fesの[公式ウェブサイト](https://unionfes.tojok-on.com)です。
 ドメイン、リポジトリの管理は @nownabe ([GitHub](https://github.com/nownabe), [Twitter](https://twitter.com/nownabe)) がやっています。
 
+共同管理者絶賛募集中です！！！
+
+質問やドキュメントの不備等があればTwitterやDiscordで連絡してください。
+
 # Web担当者の方へ
 
 新しい年度のサイトを作るまでのドキュメントです。
