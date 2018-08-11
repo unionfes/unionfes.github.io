@@ -11,7 +11,10 @@
     <meta name="copyright" content="Copyright (c) 2013 TOJO K-ON">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>TOJO K-ON Union Fes '13</title>
-    <%= stylesheet_link_tag "2013/main.css" %>
+    <link href="/2013/bootstrap.min.css" rel="stylesheet">
+    <link href="/2013/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/2013/style.css" rel="stylesheet">
+
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -37,7 +40,7 @@
       <!--Guitar Head-->
       <div class="g-head">
         <h1 class="title">TOJO K-ON<br>Union Fes<br>'13</h1>
-        <%= image_tag "2013/g-head.jpg", alt: "g-head" %>
+        <%= image_tag "./images/g-head.jpg", alt: "g-head" %>
       </div>
       <!--End Guitar Head-->
 
@@ -58,7 +61,7 @@
           また来年のイベントにご期待ください！！</h2>
 
         <h2>Info</h2>
-        <%= image_tag "2013/title_info.png", alt: "Info", class: "title", id: "info" %>
+        <%= image_tag "./images/title_info.png", alt: "Info", class: "title", id: "info" %>
         <div class="row-blk">
           <div class="left-blk">
             <h3>Date</h3>
@@ -81,14 +84,14 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>About</h2>
-        <%= image_tag "2013/title_about.png", alt: "About", class: "title", id: "about" %>
+        <%= image_tag "./images/title_about.png", alt: "About", class: "title", id: "about" %>
         <p>TOJO K-ON Union Fesは、筑波大学のバンドサークルTOJO K-ONにまつわる全ての人たちが、世代を超えて共演するライブイベントです。第1回は2011年5月4日に開催されました。今年もゴールデンウィーク真っ只中、5/5（金）に開催されます！こどもの日！！</p>
         <p><a href="http://d.hatena.ne.jp/TOJO_K-ON/20120504">TOJO K-ON Union Fes '12の様子</a></p>
         <p>出演はTOJO K-ONの関係者なら誰でも、現役でも卒業生でも学生でも社会人でも（無職でも）参加できます。もちろん、観覧はどなたでも大歓迎。どしどしご参加ください！！</p>
         <div class="row-blk">
           <div class="left-blk">
             <a href="http://www.upsold.com/dshop/store/no1aran/">
-              <%= image_tag "2013/tshirt.png", alt: "tshirt", width: "", height: "" %>
+              <%= image_tag "./images/tshirt.png", alt: "tshirt", width: "", height: "" %>
             </a>
           </div>
           <div class="right-blk">
@@ -107,10 +110,10 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>Band</h2>
-        <%= image_tag "2013/title_band.png", alt: "Band", class: "title", id: "band" %>
+        <%= image_tag "./images/title_band.png", alt: "Band", class: "title", id: "band" %>
         <div id="band_group">
           <div class="band">
-            <%= image_tag "2013/band/1.jpg", alt: "ザ・海峡" %>
+            <%= image_tag "./images/band/1.jpg", alt: "ザ・海峡" %>
             <div class="desc">
               <p><span class="order">01</span><span class="bname">ザ・海峡</span></p>
               <p class="time">15:00 - 15:35</p>
@@ -132,7 +135,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/2.jpg", alt: "第六回" %>
+            <%= image_tag "./images/band/2.jpg", alt: "第六回" %>
             <div class="desc">
               <p><span class="order">02</span><span class="bname">第六回</span></p>
               <p class="time">15:35 - 16:10</p>
@@ -160,7 +163,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/3.jpg", alt: "German measles" %>
+            <%= image_tag "./images/band/3.jpg", alt: "German measles" %>
             <div class="desc">
               <p><span class="order">03</span><span class="bname">German measles</span></p>
               <p class="time">16:10 - 16:45</p>
@@ -182,7 +185,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/4.jpg", alt: "咤淵之光" %>
+            <%= image_tag "./images/band/4.jpg", alt: "咤淵之光" %>
             <div class="desc">
               <p><span class="order">04</span><span class="bname">咤淵之光<span style="font-size: 50%;">（たぶちのひかり）</span></span></p>
               <p class="time">16:45 - 17:20</p>
@@ -210,7 +213,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/5.jpg", alt: "クロ・クロ" %>
+            <%= image_tag "./images/band/5.jpg", alt: "クロ・クロ" %>
             <div class="desc">
               <p><span class="order">05</span><span class="bname">クロ・クロ</span></p>
               <p class="time">17:40 - 18:15</p>
@@ -232,7 +235,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/6.jpg", alt: "沈黙のバンド" %>
+            <%= image_tag "./images/band/6.jpg", alt: "沈黙のバンド" %>
             <div class="desc">
               <p><span class="order">06</span><span class="bname">沈黙のバンド</span></p>
               <p class="time">18:15 - 18:50</p>
@@ -254,7 +257,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/7.jpg", alt: "LOSTINOUE" %>
+            <%= image_tag "./images/band/7.jpg", alt: "LOSTINOUE" %>
             <div class="desc">
               <p><span class="order">07</span><span class="bname">LOSTINOUE</span></p>
               <p class="time">18:50 - 19:25</p>
@@ -276,7 +279,7 @@
             </div>
           </div>
           <div class="band">
-            <%= image_tag "2013/band/8.jpg", alt: "すずきふじもと" %>
+            <%= image_tag "./images/band/8.jpg", alt: "すずきふじもと" %>
             <div class="desc">
               <p><span class="order">08</span><span class="bname">すずきふじもと</span></p>
               <p class="time">19:25 - 20:00</p>
@@ -302,13 +305,13 @@
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
         <h2>Contact</h2>
-        <%= image_tag "2013/title_contact.png", alt: "Contact", class: "title", id: "contact" %>
+        <%= image_tag "./images/title_contact.png", alt: "Contact", class: "title", id: "contact" %>
         <p>ご質問・ご意見などは、以下のフォームからご連絡ください。<br>
           <!-- <strong>*</strong> は必須項目です。</p> -->
 
         <p class="linktotop"><a href="#top">▲トップに戻る</a></p>
 
-        <%= image_tag "2013/joint.png", alt: "joint", width: "", height: "", class: "joint" %>
+        <%= image_tag "./images/joint.png", alt: "joint", width: "", height: "", class: "joint" %>
 
       </div>
       <!--End Guitar Neck-->

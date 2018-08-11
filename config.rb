@@ -1,5 +1,8 @@
 require "lib/display_length"
+require "lib/helpers"
+
 helpers DisplayLength
+helpers Helpers
 
 module StringExt
   def ljust(size, padstr = ' ')
@@ -32,8 +35,5 @@ end
 activate :livereload
 activate :sprockets
 
+set :layout, false
 set :relative_links, true
-
-page "2012/*", layout: false
-page "2013/*", layout: false
-page "2014/*", layout: false

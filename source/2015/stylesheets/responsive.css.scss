@@ -1,0 +1,58 @@
+@media screen and (max-width: 991px) {
+  .section-header {
+    transform: rotate(0deg);
+    text-align: center;
+
+    img {
+      display: none;
+    }
+
+    .english {
+      font: {
+        family: 'Passion One';
+	size: 10rem;
+	weight: 900;
+      }
+      letter-spacing: 0rem;
+    }
+    .japanese {
+      margin-top: -40px;
+      font-size: 3rem;
+    }
+  }
+
+  .section-body {
+    .sub-header {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+  }
+
+  .section-header {
+    text-align: center;
+    .english, .japanese {
+      display: none;
+    }
+  }
+  /*
+  .section-header {
+    transform: rotate(-90deg);
+    .english {
+      width: 500px;
+    }
+    .japanese {
+      width: 500px;
+    }
+  }
+  .section-body {
+    //margin-top: -150px;
+    //height: 500px;
+  }
+  */
+
+
+}
