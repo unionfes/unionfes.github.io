@@ -1,6 +1,8 @@
 Union Fes Web Site
 ==================
 
+[![Build Status](https://travis-ci.org/unionfes/unionfes.github.io.svg?branch=source)](https://travis-ci.org/unionfes/unionfes.github.io)
+
 TOJO K-ON Union Fesの[公式ウェブサイト](https://unionfes.tojok-on.com)です。
 ドメイン、リポジトリの管理は @nownabe ([GitHub](https://github.com/nownabe), [Twitter](https://twitter.com/nownabe)) がやっています。
 
