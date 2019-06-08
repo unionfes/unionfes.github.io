@@ -122,6 +122,3 @@ DEPENDENCIES
   middleman-sprockets (~> 4.0.0.rc)
   rake
   slim
-
-BUNDLED WITH
-   1.16.2

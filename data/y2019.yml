@@ -1,92 +1,68 @@
 bands:
   - id: band1
-    name: ZAKION YO-ICHI MAHOTK
+    name: flu game 12
     description: |-
-      ヒット曲からマニアックな曲まで。
-      今回は‘‘僕等なりのBEST HIT AKG’’！
+      TOJO K-ONを代表あるいは副代表として、
+      かつて支えてきた者・今も支え続ける者達による、 
+      広範囲世代層対応バンド。
+      一切の重圧のない緊張をご堪能あれ
     members:
-      - ["Gt./Vo.", "尾崎僚"]
-      - ["Gt./Vo.", "村本耀一"]
-      - ["Ba./Cho.", "八塚真帆"]
-      - ["Dr.", "高橋一貴"]
+      - ["Gt./Vo.", "takuma nakatani"]
+      - ["Gt.", "yuto kashiwai"]
+      - ["Ba.", "ryosuke taka"]
+      - ["Dr.", "takashi shishikura"]
   - id: band2
-    name: WonE (Wonder Erection)
-    description: ハードコアはじめました。
+    name: OMDX(SiM)
+    description: やったぜ。‬<br>演奏者:変態SiMカバー 7/6(土)‬<br>来たる7月に先日ドカポンしたいつものサバ好きなおっさんとシマウマ好きなおっさん(Ba)とエビ好きのおっさん(Gt)と飯(Vo)の4人で秋葉で盛りあうぜ‬<br>やはり大勢でヘドバンまみれになると最高や‬<br>ああ〜〜はやくヘドバンまみれになろうぜ‬
     members:
-      - ["Vo.", "箕ディック"]
-      - ["Gt.", "橋ディック"]
-      - ["Ba.", "大ディック"]
-      - ["Ba.VI", "谷ディック"]
-      - ["Dr.", "正ディック"]
+      - ["Vo.", "飯"]
+      - ["Gt.", "エビ好きのおっさん"]
+      - ["Ba.", "シマウマ好きなおっさん"]
+      - ["Dr.", "サバ好きなおっさん"]
   - id: band3
-    name: 死んだ木
-    description: グランジ的精神
+    name: yoichi
+    description: 前回の冬ユニフェス当日、その場で結成したのがこのバンド！<br>毎年OBOGが集まる機会があるって素晴らしいですね<br>バンド名はそんなフェスの幹事への敬意を評して名付けました。<br>村本先生焼き肉おごってください！
     members:
-      - ["Gt./Vo.", "井上雄人"]
-      - ["Ba./Cho.", "橋本歩"]
-      - ["Dr.", "村田陵"]
+      - ["", ""]
   - id: band4
-    name: ナマステ
+    name: げるバンド（ヨルシカのコピー）
     description: |-
-      ポルノグラフィティのコピーバンドです。
-      全員「理解している」メンバーで組んだのでとてもマニアックな曲を選曲できました。
-      よろしくお願いいたします。
+      げるちゃん社会人編に突入！
+      新しい生活に寂しさと期待が入り混じるメロディーをお届けします。
     members:
-      - ["ボーカル・ギター", "林亮太"]
-      - ["ギター", "中沢彰吾"]
-      - ["ベース", "八塚真帆"]
-      - ["ドラム", "横田亜蘭"]
-      - ["キーボード・サンプラー", "佐藤周平"]
+      - ["", ""]
   - id: band5
-    name: All Need Guilty Lyrics
+    name: すてふぁぶ
     description: |-
-      This is Hardcore & Scream
-      Cover of Foreground Eclipse
+      名古屋の隠れたインディーズバンドstereo fabrication of youthのコピバンです！
+      エモいメンツでやります。
+      ステファブの魅力が少しでも伝えられるよう頑張ります！
     members:
-      - ["Vocal", "ARA"]
-      - ["Scream", "OMDX"]
-      - ["Guitar", "No Enemy"]
-      - ["Guitar", "Fuzz Girl"]
-      - ["Bass", "Ayabe"]
-      - ["Keyboard", "Arice"]
-      - ["Drums", "Masa"]
+      - ["", ""]
   - id: band6
-    name: hogehoge
+    name: ドラマーズ
     description: |-
-      2014年2月より活動しているフーバーオーバーのコピーバンド。
-      予習してこないと元腹パン副代表の右ストレートで火星まで飛ばされるとの噂。
+      ドラマー4人がお酒の勢いで組んだバンド。ふるさわ(Gt/Vo)の歌唱力にご注目！！
     members:
-      - ["Vo./Gt.", "塩原"]
-      - ["Gt.", "藤浦"]
-      - ["Ba.", "清野"]
-      - ["Dr.", "TK"]
+      - ["", ""]
   - id: band7
-    name: キミに熱中症
+    name: welfare
     description: |-
-      Base Ball Bearのコピーバンド。
-      檸檬をかじるような青春の爽やかなロックをお届けします。
+      大学院2年生2名と社会人2名によって構成されたオリジナルバンド。
+      まっすぐな歌と変拍子と透明感が特徴。
+      情熱を込めた曲と熱い演奏でユニフェスを盛り上げます。
     members:
-      - ["Vo./Gt.", "林亮太(はやし)"]
-      - ["Gt.", "山崎祐(やまさき)"]
-      - ["Ba./Cho.", "志村友梨(しむしむ)"]
-      - ["Dr.", "横田亜蘭(アラン)"]
+      - ["", ""]
   - id: band8
-    name: 数の子少女
-    description: ナンバーガールのコピーです！
+    name: レイキャビク
+    description: |-
+      2010年結成、9年の時を経て肩にのしかかる重さなど、筋肉の負荷に耐えながらリハビリを始めた。
+      アイスランドのような冷たい気候を表現する感じの曲を演るかと思いきや、そうでもない感じの曲を模倣するバンド。
+      バンド名のレイは令和のレイであるとかそうでないとか。
     members:
-      - ["Vo./Gt.", "たま"]
-      - ["Gt.", "たな"]
-      - ["Ba.", "かわ"]
-      - ["Dr.", "やじまさん"]
+      - ["", ""]
   - id: band9
-    name: THE TEKERE
-    description: "The METAL"
+    name: よくばりバンド
+    description: 現役時代に一緒にやりたかった人と今現在めっちゃやりたい曲を。1年間ごしに実現するよくばりなバンド！
     members:
-      - ["Vo.",  "TENCHO"]
-      - ["Vo.",  "MUTEKI"]
-      - ["Gt.",  "MOTCHY"]
-      - ["Gt.",  "TACKEY"]
-      - ["Ba.",  "SOWKEY"]
-      - ["Key.", "SHOWTA"]
-      - ["Ds.",  "SHOWGO"]
-      - ["Cho.", "MOMOKA"]
+      - ["", ""]

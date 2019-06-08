@@ -46,11 +46,11 @@ html
 
     div.container#container
       div.section.active#title-section
-        h1 = image_tag "./images/hp.svg", alt: "Union Fes 2015 May 4, 2015 at KURAWOOD"
-        p.info Open 14:30 / Start 15:00
-        p.info Uchiage 20:00 / End 22:00
+        h1 = "Union Fes 2019 July 6, 2019 at AKIHABARA CLUB GOODMAN"
+        p.info Open 15:00 / Start 15:30
+        p.info Uchiage 21:00 / End 23:00
 
-      - data.y2015.bands.each do |band|
+      - data.y2019.bands.each do |band|
         div.band.section id="#{band["id"]}-section"
           div.band-container
             h2.band-name = band["name"]
@@ -69,55 +69,37 @@ html
           p
             | 筑波大学の軽音サークルTOJO K-ONの過去・現在・未来に関わる全ての人々が世代を超えて全力で楽しむライブイベントです。
           p
-            | 今年は2015年5月4日に浅草KURAWOODというライブハウスで開催します。
+            | 今年は2019年7月6日に秋葉原CLUB GOODMANというライブハウスで開催します。
           p
             | 過去のサイトで今までのUnion Fesの様子を見ることができるので、是非チェックしてみてください！
         ul.pasts
           li = link_to "Union Fes '12", "/2012", target: "_blank"
           li = link_to "Union Fes '13", "/2013", target: "_blank"
           li = link_to "Union Fes '14", "/2014", target: "_blank"
+          li = link_to "Union Fes '15", "/2015", target: "_blank"
+          li = link_to "Union Fes '16", "/2016", target: "_blank"
+          li = link_to "Union Fes '17", "/2017", target: "_blank"
+          li = link_to "Union Fes '18", "/2018", target: "_blank"
 
       div.info.section#access-section
-        h2 Access to 浅草KURAWOOD
+        h2 Access to 秋葉原CLUB GOODMAN
         div.map
-          iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25915.32518033832!2d139.79810700000002!3d35.715995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec7fd3949a3%3A0x2273fa87cbac97c!2z5pel5pysLCDjgJIxMTEtMDA0MyDmnbHkuqzpg73lj7DmnbHljLrpp5LlvaLvvJHkuIHnm67vvJPiiJLvvJg!5e0!3m2!1sja!2s!4v1424603047038"
+          iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1817677977733!2d139.77422981552772!3d35.69714438019053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea8e3d53c55%3A0x57c3c3ee51277ff0!2z56eL6JGJ5Y6fQ0xVQiBHT09ETUFO!5e0!3m2!1sja!2sjp!4v1559142378785!5m2!1sja!2sjp"
         div.content
-          p つくばエクスプレス 浅草駅 から徒歩15分
-          p 東京都台東区駒形1丁目3-8 ベッコアメ浅草ビルB1F
+          p JR秋葉原駅・昭和通り口より徒歩2分
+          p 〒101-0026 東京都千代田区神田佐久間河岸５５ ASビル B1F
           p
-            a.external href="http://kurawood.jp/" target="_blank" http://kurawood.jp/
+            a.external href="http://clubgoodman.com" target="_blank" http://clubgoodman.com
 
       div.info.section#price-section
         h2 Price
         div.content
-          = image_tag "./images/price.svg"
-          p 学生: 入場料0円 打上げ2000円
-          p 社会人: 入場料1500円 打上げ2000円
-          p ドリンク代500円別
+          p 学生: 取り置き・前売り500円、当日1000円 / 打上げ3000円
+          p 社会人: 取り置き1000円、当日1500円 打上げ4000円
+          p ドリンク代600円別
+          p
+            a href="https://forms.gle/AE7sMpD2GbRELvKz9" チケットの取り置き（割引あり）
 
-      div.info.section#tshirt-section
-        h2 T-shirt
-        div.content
-          a href="http://www.ttrinity.jp/shop/kmdr/"
-            = image_tag "./images/tshirt-front.png"
-          a href="http://www.ttrinity.jp/shop/kmdr/"
-            = image_tag "./images/tshirt-back.png"
-          p Union Fes '15 特製Tシャツ販売開始！！
-          p
-            a href="http://www.ttrinity.jp/product/2168507" 片面黒インク 2,000円
-            |  /
-            a href="http://www.ttrinity.jp/product/2168499" 片面白インク 2,600円
-          p
-            a href="http://www.ttrinity.jp/product/2168502" 両面黒インク 2,500円
-            |  /
-            a href="http://www.ttrinity.jp/product/2168495" 両面白インク 3,700円
-          p
-            a href="http://www.ttrinity.jp/product/2168504" 両面タイト黒インク 2,600円
-            |  /
-            a href="http://www.ttrinity.jp/product/2168491" 両面タイト白インク 3,700円
-
-          p
-            a.external href="http://www.ttrinity.jp/shop/kmdr/" 衣装部
 
     ul#menu
       li.active data-menuanchor="title"
@@ -130,13 +112,11 @@ html
         a href="#access" Access
       li data-menuanchor="price"
         a href="#price" Price
-      li data-menuanchor="tshirt"
-        a href="#tshirt" T-shirt
 
       br
 
       div#bands-menu
-        - data.y2015.bands.each do |band|
+        - data.y2019.bands.each do |band|
           li.band data-menuanchor="#{band["id"]}"
             a href="##{band["id"]}" = band["name"]
 
