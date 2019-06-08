@@ -1,0 +1,125 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content=(current_page.data.description || data.defaults.description)
+    meta name="keywords" content="TOJO K-ON,軽音,筑波大学"
+    meta name="author" content="UNIKAI"
+    meta property="og:title" content="TOJO K-ON Union Fes '15"
+    meta property="og:type" content="website"
+    meta property="og:url" content="http://unionfes.tojok-on.com/#{current_path}"
+    meta property="og:image" content="http://unionfes.tojok-on.com/images/2015/landing/img_title.png"
+    meta property="og:site_name" content="TOJO K-ON Union Fes"
+    meta property="og:description" content=(current_page.data.description || data.defaults.description)
+    meta property="fb:app_id" content="2065543910251279"
+    meta property="fb:admins" content="100005574188772"
+    title TOJO K-ON Union Fes '19
+
+    = stylesheet_link_tag "normalize"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Passion+One:400,700,900"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Hind:700"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Ubuntu:400,500"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Droid+Sans+Mono"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Ubuntu+Mono"
+    = stylesheet_link_tag "//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Sigmar+One"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Chewy"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Shadows+Into+Light"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Tangerine:400,700"
+    = stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css"
+    = stylesheet_link_tag "./stylesheets/responsive_small"
+    = stylesheet_link_tag "./stylesheets/responsive_large"
+    = stylesheet_link_tag "./stylesheets/main.css"
+
+    javascript:
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37580164-3', 'auto');
+      ga('send', 'pageview');
+
+  body
+
+    div.container#container
+      div.section.active#title-section
+        h1 = "Union Fes 2019 July 6, 2019 at AKIHABARA CLUB GOODMAN"
+        p.info Open 15:00 / Start 15:30
+        p.info Uchiage 21:00 / End 23:00
+
+      - data.y2019.bands.each do |band|
+        div.band.section id="#{band["id"]}-section"
+          div.band-container
+            h2.band-name = band["name"]
+            div.description = (band["description"] || "").gsub(/\n/, "<br>")
+            div.members
+              - part_max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?
+              - name_max_length = length(band["members"].max_by { |m| length(m[1]) }[1]) unless band["members"].empty?
+              - band["members"].each do |member|
+                div.member
+                  span.part = member[0].ljust(part_max_length + 1).gsub(/\s/, "&nbsp;")
+                  span.name = member[1].ljust(name_max_length).gsub(/\s/, "&nbsp;")
+
+      div.info.section#about-section
+        h2 About Union Fes
+        div.content
+          p
+            | 筑波大学の軽音サークルTOJO K-ONの過去・現在・未来に関わる全ての人々が世代を超えて全力で楽しむライブイベントです。
+          p
+            | 今年は2019年7月6日に秋葉原CLUB GOODMANというライブハウスで開催します。
+          p
+            | 過去のサイトで今までのUnion Fesの様子を見ることができるので、是非チェックしてみてください！
+        ul.pasts
+          li = link_to "Union Fes '12", "/2012", target: "_blank"
+          li = link_to "Union Fes '13", "/2013", target: "_blank"
+          li = link_to "Union Fes '14", "/2014", target: "_blank"
+          li = link_to "Union Fes '15", "/2015", target: "_blank"
+          li = link_to "Union Fes '16", "/2016", target: "_blank"
+          li = link_to "Union Fes '17", "/2017", target: "_blank"
+          li = link_to "Union Fes '18", "/2018", target: "_blank"
+
+      div.info.section#access-section
+        h2 Access to 秋葉原CLUB GOODMAN
+        div.map
+          iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1817677977733!2d139.77422981552772!3d35.69714438019053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea8e3d53c55%3A0x57c3c3ee51277ff0!2z56eL6JGJ5Y6fQ0xVQiBHT09ETUFO!5e0!3m2!1sja!2sjp!4v1559142378785!5m2!1sja!2sjp"
+        div.content
+          p JR秋葉原駅・昭和通り口より徒歩2分
+          p 〒101-0026 東京都千代田区神田佐久間河岸５５ ASビル B1F
+          p
+            a.external href="http://clubgoodman.com" target="_blank" http://clubgoodman.com
+
+      div.info.section#price-section
+        h2 Price
+        div.content
+          p 学生: 取り置き・前売り500円、当日1000円 / 打上げ3000円
+          p 社会人: 取り置き1000円、当日1500円 打上げ4000円
+          p ドリンク代600円別
+          p
+            a href="https://forms.gle/AE7sMpD2GbRELvKz9" チケットの取り置き（割引あり）
+
+
+    ul#menu
+      li.active data-menuanchor="title"
+        a href="#title" Top
+      li data-menuanchor="band1"
+        a href="#band1" Band
+      li data-menuanchor="about"
+        a href="#about" About
+      li data-menuanchor="access"
+        a href="#access" Access
+      li data-menuanchor="price"
+        a href="#price" Price
+
+      br
+
+      div#bands-menu
+        - data.y2019.bands.each do |band|
+          li.band data-menuanchor="#{band["id"]}"
+            a href="##{band["id"]}" = band["name"]
+
+    = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.js"
+    = javascript_include_tag "./main", async: "async", defer: "defer"
