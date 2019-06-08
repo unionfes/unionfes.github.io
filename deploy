@@ -5,7 +5,7 @@ set -eu
 echo "Branch: ${TRAVIS_BRANCH}"
 
 [[ $TRAVIS_REPO_SLUG = "unionfes/unionfes.github.io" ]] || exit 0
-[[ $TRAVIS_BRANCH != "master" ]] && {
+[[ $TRAVIS_BRANCH != "source" ]] && {
   echo "Deployment is skipped"
   exit 0
 }
@@ -27,8 +27,8 @@ chmod 600 $HOME/.ssh/id_rsa
 # Configure git
 
 git init .
-git config user.name travis
-git config usre.email ci@travis-ci.org
+git config user.name nownabe
+git config usre.email nownabe@gmail.com
 git remote add origin ssh://git@github.com/unionfes/unionfes.github.io.git
 
 # Deploy
