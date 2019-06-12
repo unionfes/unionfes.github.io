@@ -154,7 +154,7 @@ div#band1-section {
 }
 
 div#band2-section {
-  @include background('comming_soon1.jpg');
+  @include background('sim.jpg');
   background-position: top center;
   color: #555;
 
@@ -188,7 +188,7 @@ div#band4-section {
 }
 
 div#band5-section {
-  @include background('comming_soon1.jpg');
+  @include background('sutefab.jpg');
 
   .band-container {
     .band-name {
