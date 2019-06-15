@@ -54,6 +54,7 @@ html
         div.band.section id="#{band["id"]}-section"
           div.band-container
             h2.band-name = band["name"]
+            h4.cover = band["cover"]
             div.description = (band["description"] || "").gsub(/\n/, "<br>")
             div.members
               - part_max_length = length(band["members"].max_by { |m| length(m[0]) }[0]) unless band["members"].empty?

@@ -127,6 +127,10 @@ div.band {
       }
     }
 
+    h4.cover {
+      padding: 0;
+    }
+
     div.description {
       padding: 0;
       font: {
@@ -145,6 +149,7 @@ div.band {
 
 div#band1-section {
   @include background('band-1.png');
+  background-position: top center;
 
   .band-container {
     .band-name {
@@ -167,7 +172,7 @@ div#band2-section {
 }
 
 div#band3-section {
-  @include background('comming_soon1.jpg');
+  @include background('yoichi.jpg');
   color: #daa520;
 }
 
