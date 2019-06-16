@@ -1,18 +1,20 @@
 bands:
   - id: band1
     name: flu game 12
+    cover: Copy of 神様、僕は気づいてしまった
     description: |-
       TOJO K-ONを代表あるいは副代表として、
       かつて支えてきた者・今も支え続ける者達による、 
       広範囲世代層対応バンド。
       一切の重圧のない緊張をご堪能あれ
     members:
-      - ["Gt./Vo.", "takuma nakatani"]
+      - ["Vo./Gt.", "takuma nakatani"]
       - ["Gt.", "yuto kashiwai"]
       - ["Ba.", "ryosuke taka"]
       - ["Dr.", "takashi shishikura"]
   - id: band2
     name: OMDX(SiM)
+    cover: Copy of SiM
     description: やったぜ。‬<br>演奏者:変態SiMカバー 7/6(土)‬<br>来たる7月に先日ドカポンしたいつものサバ好きなおっさんとシマウマ好きなおっさん(Ba)とエビ好きのおっさん(Gt)と飯(Vo)の4人で秋葉で盛りあうぜ‬<br>やはり大勢でヘドバンまみれになると最高や‬<br>ああ〜〜はやくヘドバンまみれになろうぜ‬
     members:
       - ["Vo.", "飯"]
@@ -21,11 +23,13 @@ bands:
       - ["Dr.", "サバ好きなおっさん"]
   - id: band3
     name: yoichi
+    cover: Copy of yonige
     description: 前回の冬ユニフェス当日、その場で結成したのがこのバンド！<br>毎年OBOGが集まる機会があるって素晴らしいですね<br>バンド名はそんなフェスの幹事への敬意を評して名付けました。<br>村本先生焼き肉おごってください！
     members:
       - ["", ""]
   - id: band4
-    name: げるバンド（ヨルシカのコピー）
+    name: げるバンド
+    cover: Copy of ヨルシカ
     description: |-
       げるちゃん社会人編に突入！
       新しい生活に寂しさと期待が入り混じるメロディーをお届けします。
@@ -33,6 +37,7 @@ bands:
       - ["", ""]
   - id: band5
     name: すてふぁぶ
+    cover: Copy of stereo fabrication of youth
     description: |-
       名古屋の隠れたインディーズバンドstereo fabrication of youthのコピバンです！
       エモいメンツでやります。
@@ -41,12 +46,13 @@ bands:
       - ["", ""]
   - id: band6
     name: ドラマーズ
+    cover: Copy of 溶けた電球
     description: |-
       ドラマー4人がお酒の勢いで組んだバンド。ふるさわ(Gt/Vo)の歌唱力にご注目！！
     members:
       - ["", ""]
   - id: band7
-    name: welfare
+    name: from welfare(オリジナル)
     description: |-
       大学院2年生2名と社会人2名によって構成されたオリジナルバンド。
       まっすぐな歌と変拍子と透明感が特徴。
@@ -54,7 +60,7 @@ bands:
     members:
       - ["", ""]
   - id: band8
-    name: レイキャビク
+    name: レイキャビク（オムニバス）
     description: |-
       2010年結成、9年の時を経て肩にのしかかる重さなど、筋肉の負荷に耐えながらリハビリを始めた。
       アイスランドのような冷たい気候を表現する感じの曲を演るかと思いきや、そうでもない感じの曲を模倣するバンド。
@@ -62,7 +68,7 @@ bands:
     members:
       - ["", ""]
   - id: band9
-    name: よくばりバンド
+    name: よくばりバンド（オムニバス）
     description: 現役時代に一緒にやりたかった人と今現在めっちゃやりたい曲を。1年間ごしに実現するよくばりなバンド！
     members:
       - ["", ""]
