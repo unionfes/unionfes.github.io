@@ -5,7 +5,7 @@ git:
 
 script:
   - bundle exec middleman build
-  - "./deploy"
+  - if [[ "$TRAVIS_BRANCH" = "source" ]]; then ./deploy; fi
 
 notifications:
   slack:
