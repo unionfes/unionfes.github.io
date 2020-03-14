@@ -40,6 +40,9 @@ https://discord.gg/q5TVkVj
 * [SSHの公開鍵を作成しGithubに登録する手順](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
 
 その後、DiscordでGitHubのアカウント名を教えてください。
+管理者が以降の作業ができるようにアカウントをunionfesのリポジトリに登録します。
+
+管理者からDiscordで設定が終わったと連絡があったら、以降の作業をすすめてください。
 
 ### Setup
 
