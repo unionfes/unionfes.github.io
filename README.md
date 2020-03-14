@@ -122,10 +122,10 @@ mkdir 2020
 
 そして、他の年度と同じように2020年ページへのリンクを追加してください。
 
-```html
-  <li><a href="/2019">Union Fes '19</a></li>
-  <li><a href="/2020">Union Fes '20</a></li>
-</ul>
+```diff
+   <li><a href="/2019">Union Fes '19</a></li>
++  <li><a href="/2020">Union Fes '20</a></li>
+ </ul>
 ```
 
 あとは、`2020/index.html` を作成し、HTML/CSS/JavaScript等で好きなようにサイトを作成してください。
